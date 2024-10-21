@@ -40,7 +40,7 @@
                   <Font name="Segoe UI" size="14.0" />
                </font>
             </Label>
-            <TextField layoutX="30.0" layoutY="165.0" minHeight="35.0" minWidth="340.0">
+            <TextField fx:id="T_CorreoE" layoutX="30.0" layoutY="165.0" minHeight="35.0" minWidth="340.0">
                <font>
                   <Font name="Segoe UI" size="14.0" />
                </font>
@@ -50,17 +50,17 @@
                   <Font name="Segoe UI" size="14.0" />
                </font>
             </Label>
-            <Button layoutX="90.0" layoutY="420.0" minHeight="27.0" mnemonicParsing="false" prefWidth="72.0" style="-fx-background-color: #cc0000; -fx-cursor: hand;" text="Entrar" textFill="#fafafa">
+            <Button fx:id="B_Entrar" layoutX="90.0" layoutY="420.0" minHeight="27.0" mnemonicParsing="false" onAction="#eventButtonEntrar" prefWidth="72.0" style="-fx-background-color: #cc0000; -fx-cursor: hand;" text="Entrar" textFill="#fafafa">
                <font>
                   <Font name="Segoe UI" size="14.0" />
                </font>
             </Button>
-            <Button layoutX="200.0" layoutY="420.0" minHeight="27.0" mnemonicParsing="false" prefWidth="108.0" style="-fx-cursor: hand;" text="Crear Cuenta">
+            <Button fx:id="T_CrearC" layoutX="200.0" layoutY="420.0" minHeight="27.0" mnemonicParsing="false" onAction="#eventButtonCrearC" prefWidth="108.0" style="-fx-cursor: hand;" text="Crear Cuenta">
                <font>
                   <Font name="Segoe UI" size="14.0" />
                </font>
             </Button>
-            <PasswordField layoutX="30.0" layoutY="255.0" prefHeight="35.0" prefWidth="340.0" />
+            <PasswordField fx:id="T_Contrasena" layoutX="30.0" layoutY="255.0" prefHeight="35.0" prefWidth="340.0" />
          </children>
       </Pane>
    </children>

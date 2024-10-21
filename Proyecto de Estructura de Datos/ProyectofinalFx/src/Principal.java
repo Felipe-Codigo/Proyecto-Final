@@ -14,9 +14,9 @@ public class Principal extends Application {
         
         Parent root = FXMLLoader.load(getClass().getResource("/view/Login.fxml"));
         
-      
+        Scene scene = new Scene(root);
         primaryStage.setTitle("Login");
-        primaryStage.setScene(new Scene(root));
+        primaryStage.setScene(scene);
         primaryStage.show();
     }
 
