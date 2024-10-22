@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1220.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CategoriaController">
+   <children>
+      <Pane layoutY="6.0" prefHeight="650.0" prefWidth="1220.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <TabPane prefHeight="650.0" prefWidth="1220.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="   Home   ">
+                     <content>
+                        <ScrollPane minHeight="750.0" minWidth="1220.0" style="-fx-background-color: #F5F5F5;">
+                          <content>
+                            <AnchorPane minHeight="750.0" minWidth="1220.0">
+                                 <children>
+                                    <Pane layoutX="-3.0" minHeight="750.0" minWidth="1220.0" style="-fx-background-color: #FFFFFF;" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                     </content></Tab>
+                <Tab text="Favoritos" />
+                  <Tab text="Historial" />
+                  <Tab text="Perfil" />
+              </tabs>
+            </TabPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
