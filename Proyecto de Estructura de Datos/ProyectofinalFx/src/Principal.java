@@ -10,14 +10,14 @@ import javafx.stage.Stage;
 public class Principal extends Application {
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage stage) throws Exception {
         
         Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         
         Scene scene = new Scene(root);
-        primaryStage.setTitle("Login");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+        stage.setTitle("Login");
+        stage.setScene(scene);
+        stage.show();
     }
 
     /**

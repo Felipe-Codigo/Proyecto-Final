@@ -40,7 +40,7 @@ public class Crear_CuentaController implements Initializable {
     
     @FXML
     public void eventButtonInicioS (ActionEvent event){
-        cambiarVentana (event, "/view/Login.fxml");
+        cambiarVentana (event, "Login.fxml");
     }
     
     public void eventButtonGuardarC (ActionEvent event){
