@@ -88,7 +88,7 @@
                                                 </Button>
                                              </children>
                                           </Pane>
-                                          <AnchorPane layoutY="231.0" prefHeight="510.0" prefWidth="1200.0" style="-fx-border-color: Red; -fx-background-color: #ffffff;">
+                                          <AnchorPane layoutY="231.0" prefHeight="510.0" prefWidth="1200.0" style="-fx-border-color: Red; -fx-background-color: #ffffff;" visible="false">
                                              <children>
                                                 <Pane layoutX="15.0" layoutY="10.0" prefHeight="240.0" prefWidth="380.0">
                                                    <children>
@@ -118,7 +118,7 @@
                                                       </Label>
                                                    </children>
                                                 </Pane>
-                                                <Pane layoutX="410.0" prefHeight="240.0" prefWidth="380.0">
+                                                <Pane layoutX="410.0" layoutY="10.0" prefHeight="240.0" prefWidth="380.0">
                                                    <children>
                                                       <Label layoutX="14.0" layoutY="155.0" prefHeight="69.0" prefWidth="278.0" text="Tenis adidas Forum Mid  $ 460.000                     Los tenis de básquet más avanzados de la época, las adidas Forum, regresan de los archivos y están listos para cambiar el juego." wrapText="true">
                                                          <font>
@@ -144,7 +144,8 @@
                                                             </ImageView>
                                                          </graphic>
                                                       </Button>
-                                                   </children></Pane>
+                                                   </children>
+                                                </Pane>
                                                 <Pane layoutX="805.0" layoutY="10.0" prefHeight="240.0" prefWidth="380.0">
                                                    <children>
                                                       <Label layoutX="14.0" layoutY="155.0" prefHeight="85.0" prefWidth="278.0" text="Tenis adidas Supernova+ $ 640.000                     Un trote de dos kilómetros o una carrera de dos horas. Sin importar la distancia o velocidad con que entrenes, los Supernova+ te permiten esforzarte para alcanzar tus metas." wrapText="true">
@@ -171,7 +172,8 @@
                                                             </ImageView>
                                                          </graphic>
                                                       </Button>
-                                                   </children></Pane>
+                                                   </children>
+                                                </Pane>
                                                 <Pane layoutX="15.0" layoutY="260.0" prefHeight="240.0" prefWidth="380.0">
                                                    <children>
                                                       <ImageView fitHeight="150.0" fitWidth="300.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
@@ -198,7 +200,8 @@
                                                             <Font name="System Bold" size="12.0" />
                                                          </font>
                                                       </Label>
-                                                   </children></Pane>
+                                                   </children>
+                                                </Pane>
                                                 <Pane layoutX="410.0" layoutY="260.0" prefHeight="240.0" prefWidth="380.0">
                                                    <children>
                                                       <ImageView fitHeight="150.0" fitWidth="300.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
@@ -225,7 +228,8 @@
                                                             <Font name="System Bold" size="12.0" />
                                                          </font>
                                                       </Label>
-                                                   </children></Pane>
+                                                   </children>
+                                                </Pane>
                                                 <Pane layoutX="805.0" layoutY="260.0" prefHeight="240.0" prefWidth="380.0">
                                                    <children>
                                                       <ImageView fitHeight="150.0" fitWidth="300.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
@@ -252,10 +256,184 @@
                                                             <Font name="System Bold" size="12.0" />
                                                          </font>
                                                       </Label>
-                                                   </children></Pane>
+                                                   </children>
+                                                </Pane>
                                              </children>
                                           </AnchorPane>
-                                       </children></Pane>
+                                       </children>
+                                    </Pane>
+                                    <AnchorPane layoutY="231.0" prefHeight="510.0" prefWidth="1200.0" style="-fx-background-color: #FFFFFF; -fx-border-color: Red;">
+                                       <children>
+                                          <Pane layoutX="15.0" layoutY="10.0" prefHeight="240.0" prefWidth="380.0">
+                                             <children>
+                                                <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Imagenes/img7.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                   <graphic>
+                                                      <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
+                                                         <image>
+                                                            <Image url="@Imagenes/Estrella.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                   <font>
+                                                      <Font name="Century Gothic Bold" size="14.0" />
+                                                   </font>
+                                                </Button>
+                                                <Label layoutX="210.0" layoutY="5.0" prefHeight="150.0" prefWidth="165.0" text="SHEIN EZwear Jeans cargo de talle alto con puntada con bolsillo lateral con solapa.    $ 128.500" wrapText="true">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="410.0" layoutY="10.0" prefHeight="240.0" prefWidth="380.0">
+                                             <children>
+                                                <Label layoutX="210.0" layoutY="5.0" prefHeight="150.0" prefWidth="165.0" text="Pantalon Cargo Trabajo Gabardina Hombre Jean.       $ 80.000" wrapText="true">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="25.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Imagenes/img8.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                   <font>
+                                                      <Font name="Century Gothic Bold" size="14.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                   <graphic>
+                                                      <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
+                                                         <image>
+                                                            <Image url="@Imagenes/Estrella.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="805.0" layoutY="10.0" prefHeight="240.0" prefWidth="380.0">
+                                             <children>
+                                                <Label layoutX="210.0" layoutY="5.0" prefHeight="150.0" prefWidth="165.0" text="Jean mujer tiro alto con pliegues derek.  $ 190.000" wrapText="true">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Imagenes/img9.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                   <font>
+                                                      <Font name="Century Gothic Bold" size="14.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                   <graphic>
+                                                      <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
+                                                         <image>
+                                                            <Image url="@Imagenes/Estrella.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="15.0" layoutY="260.0" prefHeight="240.0" prefWidth="380.0">
+                                             <children>
+                                                <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Imagenes/img10.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
+                                                         <image>
+                                                            <Image url="@Imagenes/Estrella.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                   <font>
+                                                      <Font name="Century Gothic Bold" size="14.0" />
+                                                   </font>
+                                                </Button>
+                                                <Label layoutX="210.0" layoutY="5.0" prefHeight="150.0" prefWidth="165.0" text="Vaqueros holgados para mujer en Houston Mid Vintage | Superdry ES-ES.      $ 170.000" wrapText="true">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="410.0" layoutY="260.0" prefHeight="240.0" prefWidth="380.0">
+                                             <children>
+                                                <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Imagenes/Img11.jpeg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                   <graphic>
+                                                      <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
+                                                         <image>
+                                                            <Image url="@Imagenes/Estrella.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                   <font>
+                                                      <Font name="Century Gothic Bold" size="14.0" />
+                                                   </font>
+                                                </Button>
+                                                <Label layoutX="210.0" layoutY="5.0" prefHeight="150.0" prefWidth="165.0" text="Manfinity EMRG Jeans rasgados de algodón para hombre con un diseño simple negro y estilo urbano callejero para fiestas de rapero $ 157.000" wrapText="true">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="805.0" layoutY="260.0" prefHeight="240.0" prefWidth="380.0">
+                                             <children>
+                                                <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Imagenes/img12.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                   <graphic>
+                                                      <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
+                                                         <image>
+                                                            <Image url="@Imagenes/Estrella.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                   <font>
+                                                      <Font name="Century Gothic Bold" size="14.0" />
+                                                   </font>
+                                                </Button>
+                                                <Label layoutX="210.0" layoutY="5.0" prefHeight="150.0" prefWidth="165.0" text="Jean Masculino Cargo H-150 Azul Claro $ 90.000" wrapText="true">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </AnchorPane>
                                  </children>
                               </AnchorPane>
                           </content>
