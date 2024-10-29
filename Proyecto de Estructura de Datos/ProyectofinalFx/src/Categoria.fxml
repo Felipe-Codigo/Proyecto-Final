@@ -38,7 +38,7 @@
                                           </Label>
                                           <Pane layoutX="46.0" layoutY="72.0" prefHeight="159.0" prefWidth="1171.0">
                                              <children>
-                                                <Button fx:id="B_Categoria1" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" minHeight="150.0" minWidth="155.0" mnemonicParsing="false" prefHeight="155.0" prefWidth="155.0" style="-fx-background-color: #4252e7;" textFill="#4252e7">
+                                                <Button fx:id="B_Categoria1" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" minHeight="150.0" minWidth="155.0" mnemonicParsing="false" onAction="#cambiarFrom" prefHeight="155.0" prefWidth="155.0" style="-fx-background-color: #a8bafa;">
                                                    <graphic>
                                                       <ImageView fitHeight="150.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
@@ -47,11 +47,11 @@
                                                       </ImageView>
                                                    </graphic>
                                                 </Button>
-                                                <Button fx:id="B_Categoria2" contentDisplay="GRAPHIC_ONLY" layoutX="155.0" minHeight="155.0" minWidth="155.0" mnemonicParsing="false" prefHeight="155.0" prefWidth="155.0" style="-fx-background-color: #4252e7;">
+                                                <Button fx:id="B_Categoria2" contentDisplay="GRAPHIC_ONLY" layoutX="155.0" minHeight="155.0" minWidth="155.0" mnemonicParsing="false" onAction="#cambiarFrom" prefHeight="155.0" prefWidth="155.0" style="-fx-background-color: #a8bafa;">
                                                    <graphic>
                                                       <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@Imagenes/Categoria4.jpeg" />
+                                                            <Image url="@Imagenes/Categoria2.png" />
                                                          </image>
                                                          <viewport>
                                                             <Rectangle2D />
@@ -59,29 +59,29 @@
                                                       </ImageView>
                                                    </graphic>
                                                 </Button>
-                                                <Button fx:id="B_Categoria3" contentDisplay="GRAPHIC_ONLY" layoutX="310.0" minHeight="155.0" minWidth="155.0" mnemonicParsing="false" prefHeight="155.0" prefWidth="155.0" style="-fx-background-color: #4252e7;">
+                                                <Button fx:id="B_Categoria3" contentDisplay="GRAPHIC_ONLY" layoutX="310.0" minHeight="155.0" minWidth="155.0" mnemonicParsing="false" onAction="#cambiarFrom" prefHeight="155.0" prefWidth="155.0" style="-fx-background-color: #a8bafa;">
                                                    <graphic>
                                                       <ImageView fitHeight="150.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@Imagenes/Categoria3.jpg" />
+                                                            <Image url="@Imagenes/Categoria3.png" />
                                                          </image>
                                                       </ImageView>
                                                    </graphic>
                                                 </Button>
-                                                <Button fx:id="B_Categoria4" contentDisplay="GRAPHIC_ONLY" layoutX="465.0" minHeight="155.0" minWidth="155.0" mnemonicParsing="false" prefHeight="155.0" prefWidth="155.0" style="-fx-background-color: #4252e7;">
+                                                <Button fx:id="B_Categoria4" contentDisplay="GRAPHIC_ONLY" layoutX="465.0" minHeight="155.0" minWidth="155.0" mnemonicParsing="false" onAction="#cambiarFrom" prefHeight="155.0" prefWidth="155.0" style="-fx-background-color: #a8bafa;">
                                                    <graphic>
                                                       <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@Imagenes/Categoria5.png" />
+                                                            <Image url="@Imagenes/Categoria4.png" />
                                                          </image>
                                                       </ImageView>
                                                    </graphic>
                                                 </Button>
-                                                <Button fx:id="B_Categoria5" contentDisplay="GRAPHIC_ONLY" layoutX="620.0" minHeight="155.0" minWidth="155.0" mnemonicParsing="false" prefHeight="155.0" prefWidth="155.0" style="-fx-background-color: #4252e7;">
+                                                <Button fx:id="B_Categoria5" contentDisplay="GRAPHIC_ONLY" layoutX="620.0" minHeight="155.0" minWidth="155.0" mnemonicParsing="false" onAction="#cambiarFrom" prefHeight="155.0" prefWidth="155.0" style="-fx-background-color: #a8bafa;">
                                                    <graphic>
                                                       <ImageView fitHeight="150.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@Imagenes/Categoria2.jpg" />
+                                                            <Image url="@Imagenes/Categoria5.png" />
                                                          </image>
                                                       </ImageView>
                                                    </graphic>
@@ -90,7 +90,7 @@
                                           </Pane>
                                        </children>
                                     </Pane>
-                                    <AnchorPane layoutY="231.0" prefHeight="510.0" prefWidth="1200.0" style="-fx-border-color: Red; -fx-background-color: #ffffff;" visible="false">
+                                    <AnchorPane fx:id="From_Categoria1" layoutY="231.0" prefHeight="510.0" prefWidth="1200.0" style="-fx-border-color: Red; -fx-background-color: #ffffff;" visible="false">
                                        <children>
                                           <Pane layoutX="15.0" layoutY="10.0" prefHeight="240.0" prefWidth="380.0">
                                              <children>
@@ -262,7 +262,7 @@
                                           </Pane>
                                        </children>
                                     </AnchorPane>
-                                    <AnchorPane layoutY="231.0" prefHeight="510.0" prefWidth="1200.0" style="-fx-background-color: #FFFFFF; -fx-border-color: Red;" visible="false">
+                                    <AnchorPane fx:id="From_Categoria2" layoutY="231.0" prefHeight="510.0" prefWidth="1200.0" style="-fx-background-color: #FFFFFF; -fx-border-color: Red;" visible="false">
                                        <children>
                                           <Pane layoutX="15.0" layoutY="10.0" prefHeight="240.0" prefWidth="380.0">
                                              <children>
@@ -434,7 +434,7 @@
                                           </Pane>
                                        </children>
                                     </AnchorPane>
-                                    <AnchorPane layoutY="231.0" prefHeight="510.0" prefWidth="1200.0" style="-fx-background-color: #FFFFFF; -fx-border-color: Red;" visible="false">
+                                    <AnchorPane fx:id="From_Categoria3" layoutY="231.0" prefHeight="510.0" prefWidth="1200.0" style="-fx-background-color: #FFFFFF; -fx-border-color: Red;" visible="false">
                                        <children>
                                           <Pane layoutX="15.0" layoutY="10.0" prefHeight="240.0" prefWidth="380.0">
                                              <children>
@@ -606,7 +606,7 @@
                                           </Pane>
                                        </children>
                                     </AnchorPane>
-                                    <AnchorPane layoutY="231.0" prefHeight="510.0" prefWidth="1200.0" style="-fx-background-color: #FFFFFF; -fx-border-color: Red;">
+                                    <AnchorPane fx:id="From_Categoria4" layoutY="231.0" prefHeight="510.0" prefWidth="1200.0" style="-fx-background-color: #FFFFFF; -fx-border-color: Red;" visible="false">
                                        <children>
                                           <Pane layoutX="15.0" layoutY="10.0" prefHeight="240.0" prefWidth="380.0">
                                              <children>
@@ -770,6 +770,178 @@
                                                    </font>
                                                 </Button>
                                                 <Label layoutX="210.0" layoutY="5.0" prefHeight="150.0" prefWidth="165.0" text="Huawei Mate XT Ultimate Design.    $ 11.880.000" wrapText="true">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane fx:id="From_Categoria5" layoutY="231.0" prefHeight="510.0" prefWidth="1200.0" style="-fx-background-color: #FFFFFF; -fx-border-color: Red;">
+                                       <children>
+                                          <Pane layoutX="15.0" layoutY="10.0" prefHeight="240.0" prefWidth="380.0">
+                                             <children>
+                                                <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Imagenes/img25.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                   <graphic>
+                                                      <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
+                                                         <image>
+                                                            <Image url="@Imagenes/Estrella.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                   <font>
+                                                      <Font name="Century Gothic Bold" size="14.0" />
+                                                   </font>
+                                                </Button>
+                                                <Label layoutX="210.0" layoutY="5.0" prefHeight="150.0" prefWidth="165.0" text="Portatil Lenovo LOQ 15IAX9 15.6&quot; Intel i5 Ram24Gb Unidad solida 512Gb T.V RTX 3050 +Windows 11Home.    $ 3.790.000" wrapText="true">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="410.0" layoutY="10.0" prefHeight="240.0" prefWidth="380.0">
+                                             <children>
+                                                <Label layoutX="210.0" layoutY="5.0" prefHeight="150.0" prefWidth="165.0" text="HP Portátil A6HX4LA#ABM 14-DQ0533LA con 8GB RAM y 256GB SSD.   $1.300.000" wrapText="true">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Imagenes/img26.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                   <font>
+                                                      <Font name="Century Gothic Bold" size="14.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                   <graphic>
+                                                      <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
+                                                         <image>
+                                                            <Image url="@Imagenes/Estrella.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="805.0" layoutY="10.0" prefHeight="240.0" prefWidth="380.0">
+                                             <children>
+                                                <Label layoutX="210.0" layoutY="5.0" prefHeight="150.0" prefWidth="165.0" text="Portátil Lenovo V14 G4 IAH Intel Core I5 12500H, 8GB DDR4, 256GB SSD, 14&quot; FHD. $ 1.920.000" wrapText="true">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                                <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Imagenes/img27.jpeg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                   <font>
+                                                      <Font name="Century Gothic Bold" size="14.0" />
+                                                   </font>
+                                                </Button>
+                                                <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                   <graphic>
+                                                      <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
+                                                         <image>
+                                                            <Image url="@Imagenes/Estrella.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="15.0" layoutY="260.0" prefHeight="240.0" prefWidth="380.0">
+                                             <children>
+                                                <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Imagenes/img28.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0">
+                                                   <graphic>
+                                                      <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
+                                                         <image>
+                                                            <Image url="@Imagenes/Estrella.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                   <font>
+                                                      <Font name="Century Gothic Bold" size="14.0" />
+                                                   </font>
+                                                </Button>
+                                                <Label layoutX="210.0" layoutY="5.0" prefHeight="150.0" prefWidth="165.0" text="Notebook Lenovo Legion Slim 7 15ach6 - 82k80083us 16gb Ram 512gb Ssd Amd Ryzen 7 Nvidia Geforce Rtx 3060 Max-q 6gb Gddr6 Windows 10 15,6'' Full Hd Gamer.   $ 7.600.000" wrapText="true">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="410.0" layoutY="260.0" prefHeight="240.0" prefWidth="380.0">
+                                             <children>
+                                                <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Imagenes/img29.jpeg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                   <graphic>
+                                                      <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
+                                                         <image>
+                                                            <Image url="@Imagenes/Estrella.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                   <font>
+                                                      <Font name="Century Gothic Bold" size="14.0" />
+                                                   </font>
+                                                </Button>
+                                                <Label layoutX="210.0" layoutY="5.0" prefHeight="150.0" prefWidth="165.0" text="Macbook Pro 15 Touchbar2018 Mod A1990 500 Gb Hd/16 Gb Ram.         $ 2.800.000" wrapText="true">
+                                                   <font>
+                                                      <Font name="System Bold" size="12.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </Pane>
+                                          <Pane layoutX="805.0" layoutY="260.0" prefHeight="240.0" prefWidth="380.0">
+                                             <children>
+                                                <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@Imagenes/img30.jpg" />
+                                                   </image>
+                                                </ImageView>
+                                                <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                   <graphic>
+                                                      <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
+                                                         <image>
+                                                            <Image url="@Imagenes/Estrella.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </graphic>
+                                                </Button>
+                                                <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                   <font>
+                                                      <Font name="Century Gothic Bold" size="14.0" />
+                                                   </font>
+                                                </Button>
+                                                <Label layoutX="210.0" layoutY="5.0" prefHeight="150.0" prefWidth="165.0" text="Portátil SAMSUNG Galaxy Book 2 Pro 15.6&quot; Pantalla Táctil i7-1260P 8GB Ram 512GB SSD.    $2.170.000" wrapText="true">
                                                    <font>
                                                       <Font name="System Bold" size="12.0" />
                                                    </font>
