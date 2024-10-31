@@ -6,6 +6,9 @@
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -957,12 +960,96 @@
                      </content></Tab>
                   <Tab text="Carrito de compra">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <AnchorPane prefHeight="620.0" prefWidth="1220.0">
+                                 <children>
+                                    <TableView layoutX="20.0" layoutY="20.0" prefHeight="500.0" prefWidth="1180.0">
+                                      <columns>
+                                        <TableColumn prefWidth="236.0" text="Producto" />
+                                        <TableColumn prefWidth="236.0" text="Nombre del producto" />
+                                          <TableColumn prefWidth="236.0" text="Tipo de producto" />
+                                          <TableColumn prefWidth="236.0" text="Precio del producto" />
+                                          <TableColumn prefWidth="236.0" text="Opciones" />
+                                      </columns>
+                                    </TableView>
+                                    <Label layoutX="28.0" layoutY="563.0" text="Cantidad de productos :">
+                                       <font>
+                                          <Font name="Segoe UI Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField editable="false" layoutX="239.0" layoutY="562.0" />
+                                    <Label layoutX="484.0" layoutY="566.0" text="Total del precio :">
+                                       <font>
+                                          <Font name="Segoe UI Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField editable="false" layoutX="636.0" layoutY="565.0" prefHeight="26.0" prefWidth="219.0" />
+                                    <Button layoutX="949.0" layoutY="565.0" mnemonicParsing="false" text="Realizar la compra">
+                                       <font>
+                                          <Font name="Segoe UI Bold" size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </children></AnchorPane>
                     </content>
                   </Tab>
-                <Tab text="Favoritos" />
-                  <Tab text="Historial" />
-                  <Tab text="Perfil" />
+                <Tab text="Favoritos">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <AnchorPane prefHeight="620.0" prefWidth="1220.0">
+                                 <children>
+                                    <TableView layoutX="20.0" layoutY="20.0" prefHeight="500.0" prefWidth="1180.0">
+                                       <columns>
+                                          <TableColumn prefWidth="200.0" text="Producto" />
+                                          <TableColumn prefWidth="200.0" text="Nombre del producto" />
+                                          <TableColumn prefWidth="200.0" text="Tipo de producto" />
+                                          <TableColumn prefWidth="200.0" text="Precio del producto" />
+                                          <TableColumn prefWidth="200.0" text="Opciones" />
+                                          <TableColumn prefWidth="180.0" text="Opciones" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                              <Label layoutX="38.0" layoutY="573.0" text="Cantidad de productos :">
+                                 <font>
+                                    <Font name="Segoe UI Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TextField editable="false" layoutX="249.0" layoutY="572.0" />
+                           </children>
+                        </AnchorPane>
+                     </content></Tab>
+                  <Tab text="Historial">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <AnchorPane prefHeight="620.0" prefWidth="1220.0">
+                                 <children>
+                                    <TableView layoutX="20.0" layoutY="20.0" prefHeight="580.0" prefWidth="1180.0">
+                                       <columns>
+                                          <TableColumn prefWidth="236.0" text="Producto" />
+                                          <TableColumn prefWidth="236.0" text="Nombre del producto" />
+                                          <TableColumn prefWidth="236.0" text="Tipo de producto" />
+                                          <TableColumn prefWidth="236.0" text="Precio del producto" />
+                                          <TableColumn prefWidth="236.0" text="Fecha de compra" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </content></Tab>
+                  <Tab text="Perfil">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <AnchorPane prefHeight="620.0" prefWidth="1220.0" />
+                           </children>
+                        </AnchorPane>
+                     </content></Tab>
               </tabs>
             </TabPane>
          </children>
