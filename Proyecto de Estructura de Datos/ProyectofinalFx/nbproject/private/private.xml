@@ -3,11 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/FELIPE%20QUINTERO/OneDrive/Documentos/NetBeansProjects/ProyectofinalFx/src/CategoriaController.java</file>
-            <file>file:/C:/Users/FELIPE%20QUINTERO/OneDrive/Documentos/NetBeansProjects/ProyectofinalFx/src/LoginController.java</file>
-            <file>file:/C:/Users/FELIPE%20QUINTERO/OneDrive/Documentos/NetBeansProjects/ProyectofinalFx/src/Categoria.fxml</file>
-            <file>file:/C:/Users/FELIPE%20QUINTERO/OneDrive/Documentos/NetBeansProjects/ProyectofinalFx/src/Principal.java</file>
-            <file>file:/C:/Users/FELIPE%20QUINTERO/OneDrive/Documentos/NetBeansProjects/ProyectofinalFx/src/Crear_CuentaController.java</file>
+            <file>file:/C:/Users/FELIPE%20QUINTERO/OneDrive/Documentos/NetBeansProjects/ProyectofinalFx/src/Proyecto/Categoria.fxml</file>
+            <file>file:/C:/Users/FELIPE%20QUINTERO/OneDrive/Documentos/NetBeansProjects/ProyectofinalFx/src/Proyecto/Principal.java</file>
+            <file>file:/C:/Users/FELIPE%20QUINTERO/OneDrive/Documentos/NetBeansProjects/ProyectofinalFx/src/Proyecto/CategoriaController.java</file>
+            <file>file:/C:/Users/FELIPE%20QUINTERO/OneDrive/Documentos/NetBeansProjects/ProyectofinalFx/src/Proyecto/LoginController.java</file>
+            <file>file:/C:/Users/FELIPE%20QUINTERO/OneDrive/Documentos/NetBeansProjects/ProyectofinalFx/src/Proyecto/Crear_CuentaController.java</file>
         </group>
     </open-files>
 </project-private>

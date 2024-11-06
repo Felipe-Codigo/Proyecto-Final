@@ -17,7 +17,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CategoriaController">
+<StackPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Proyecto.CategoriaController">
    <children>
       <AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1220.0" StackPane.alignment="CENTER">
          <children>
@@ -37,7 +37,7 @@
                                                    <graphic>
                                                       <ImageView fitHeight="150.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@Imagenes/Categoria1.png" />
+                                                            <Image url="@../Imagenes/Categoria1.png" />
                                                          </image>
                                                       </ImageView>
                                                    </graphic>
@@ -46,7 +46,7 @@
                                                    <graphic>
                                                       <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@Imagenes/Categoria2.png" />
+                                                            <Image url="@../Imagenes/Categoria2.png" />
                                                          </image>
                                                          <viewport>
                                                             <Rectangle2D />
@@ -58,7 +58,7 @@
                                                    <graphic>
                                                       <ImageView fitHeight="150.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@Imagenes/Categoria3.png" />
+                                                            <Image url="@../Imagenes/Categoria3.png" />
                                                          </image>
                                                       </ImageView>
                                                    </graphic>
@@ -67,7 +67,7 @@
                                                    <graphic>
                                                       <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@Imagenes/Categoria4.png" />
+                                                            <Image url="@../Imagenes/Categoria4.png" />
                                                          </image>
                                                       </ImageView>
                                                    </graphic>
@@ -76,7 +76,7 @@
                                                    <graphic>
                                                       <ImageView fitHeight="150.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true">
                                                          <image>
-                                                            <Image url="@Imagenes/Categoria5.png" />
+                                                            <Image url="@../Imagenes/Categoria5.png" />
                                                          </image>
                                                       </ImageView>
                                                    </graphic>
@@ -95,7 +95,7 @@
                                           </Label>
                                           <ImageView fitHeight="80.0" fitWidth="200.0" layoutX="1020.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                              <image>
-                                                <Image url="@Imagenes/logo.jpeg" />
+                                                <Image url="@../Imagenes/logo.jpeg" />
                                              </image>
                                           </ImageView>
                                           <ScrollPane layoutY="231.0" prefHeight="419.0" prefWidth="1214.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="231.0">
@@ -110,14 +110,14 @@
                                                                      <children>
                                                                         <ImageView fitHeight="150.0" fitWidth="300.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img1.png" />
+                                                                              <Image url="@../Imagenes/img1.png" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -143,7 +143,7 @@
                                                                         </Label>
                                                                         <ImageView fitHeight="150.0" fitWidth="300.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img2.png" />
+                                                                              <Image url="@../Imagenes/img2.png" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button layoutX="300.0" layoutY="150.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
@@ -155,7 +155,7 @@
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -171,7 +171,7 @@
                                                                         </Label>
                                                                         <ImageView fitHeight="150.0" fitWidth="300.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img3.png" />
+                                                                              <Image url="@../Imagenes/img3.png" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button layoutX="300.0" layoutY="150.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
@@ -183,7 +183,7 @@
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -194,14 +194,14 @@
                                                                      <children>
                                                                         <ImageView fitHeight="150.0" fitWidth="300.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img4.png" />
+                                                                              <Image url="@../Imagenes/img4.png" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -222,14 +222,14 @@
                                                                      <children>
                                                                         <ImageView fitHeight="150.0" fitWidth="300.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img5.png" />
+                                                                              <Image url="@../Imagenes/img5.png" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -250,14 +250,14 @@
                                                                      <children>
                                                                         <ImageView fitHeight="150.0" fitWidth="300.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img6.png" />
+                                                                              <Image url="@../Imagenes/img6.png" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -282,14 +282,14 @@
                                                                      <children>
                                                                         <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img7.jpg" />
+                                                                              <Image url="@../Imagenes/img7.jpg" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -315,7 +315,7 @@
                                                                         </Label>
                                                                         <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="25.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img8.jpg" />
+                                                                              <Image url="@../Imagenes/img8.jpg" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
@@ -327,7 +327,7 @@
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -343,7 +343,7 @@
                                                                         </Label>
                                                                         <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img9.jpg" />
+                                                                              <Image url="@../Imagenes/img9.jpg" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
@@ -355,7 +355,7 @@
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -366,14 +366,14 @@
                                                                      <children>
                                                                         <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img10.jpg" />
+                                                                              <Image url="@../Imagenes/img10.jpg" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -394,14 +394,14 @@
                                                                      <children>
                                                                         <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/Img11.jpeg" />
+                                                                              <Image url="@../Imagenes/Img11.jpeg" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -422,14 +422,14 @@
                                                                      <children>
                                                                         <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img12.jpg" />
+                                                                              <Image url="@../Imagenes/img12.jpg" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -454,14 +454,14 @@
                                                                      <children>
                                                                         <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img13.jpeg" />
+                                                                              <Image url="@../Imagenes/img13.jpeg" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -487,7 +487,7 @@
                                                                         </Label>
                                                                         <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img14.jpg" />
+                                                                              <Image url="@../Imagenes/img14.jpg" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
@@ -499,7 +499,7 @@
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -515,7 +515,7 @@
                                                                         </Label>
                                                                         <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img15.jpeg" />
+                                                                              <Image url="@../Imagenes/img15.jpeg" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
@@ -527,7 +527,7 @@
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -538,14 +538,14 @@
                                                                      <children>
                                                                         <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img16.jpg" />
+                                                                              <Image url="@../Imagenes/img16.jpg" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -566,14 +566,14 @@
                                                                      <children>
                                                                         <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img17.jpg" />
+                                                                              <Image url="@../Imagenes/img17.jpg" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -594,14 +594,14 @@
                                                                      <children>
                                                                         <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img18.jpg" />
+                                                                              <Image url="@../Imagenes/img18.jpg" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -626,14 +626,14 @@
                                                                      <children>
                                                                         <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img19.jpeg" />
+                                                                              <Image url="@../Imagenes/img19.jpeg" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -659,7 +659,7 @@
                                                                         </Label>
                                                                         <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img20.jpeg" />
+                                                                              <Image url="@../Imagenes/img20.jpeg" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
@@ -671,7 +671,7 @@
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -687,7 +687,7 @@
                                                                         </Label>
                                                                         <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img21.jpeg" />
+                                                                              <Image url="@../Imagenes/img21.jpeg" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
@@ -699,7 +699,7 @@
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -710,14 +710,14 @@
                                                                      <children>
                                                                         <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img22.png" />
+                                                                              <Image url="@../Imagenes/img22.png" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -738,14 +738,14 @@
                                                                      <children>
                                                                         <ImageView fitHeight="160.0" fitWidth="300.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img23.jpg" />
+                                                                              <Image url="@../Imagenes/img23.jpg" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button contentDisplay="GRAPHIC_ONLY" layoutX="310.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -766,14 +766,14 @@
                                                                      <children>
                                                                         <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img24.jpg" />
+                                                                              <Image url="@../Imagenes/img24.jpg" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -798,14 +798,14 @@
                                                                      <children>
                                                                         <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img25.jpg" />
+                                                                              <Image url="@../Imagenes/img25.jpg" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -831,7 +831,7 @@
                                                                         </Label>
                                                                         <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img26.jpg" />
+                                                                              <Image url="@../Imagenes/img26.jpg" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
@@ -843,7 +843,7 @@
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -859,7 +859,7 @@
                                                                         </Label>
                                                                         <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img27.jpeg" />
+                                                                              <Image url="@../Imagenes/img27.jpeg" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
@@ -871,7 +871,7 @@
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -882,14 +882,14 @@
                                                                      <children>
                                                                         <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img28.jpg" />
+                                                                              <Image url="@../Imagenes/img28.jpg" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -910,14 +910,14 @@
                                                                      <children>
                                                                         <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img29.jpeg" />
+                                                                              <Image url="@../Imagenes/img29.jpeg" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -938,14 +938,14 @@
                                                                      <children>
                                                                         <ImageView fitHeight="230.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                                                                            <image>
-                                                                              <Image url="@Imagenes/img30.jpg" />
+                                                                              <Image url="@../Imagenes/img30.jpg" />
                                                                            </image>
                                                                         </ImageView>
                                                                         <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
-                                                                                    <Image url="@Imagenes/Estrella.jpg" />
+                                                                                    <Image url="@../Imagenes/Estrella.jpg" />
                                                                                  </image>
                                                                               </ImageView>
                                                                            </graphic>
@@ -1010,7 +1010,7 @@
                                           </Button>
                                           <ImageView fitHeight="80.0" fitWidth="200.0" layoutX="1020.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                              <image>
-                                                <Image url="@Imagenes/logo.jpeg" />
+                                                <Image url="@../Imagenes/logo.jpeg" />
                                              </image>
                                           </ImageView>
                                           <Label layoutX="20.0" layoutY="14.0" text="CARRITO DE COMPRAS" textFill="RED">
@@ -1032,7 +1032,7 @@
                                        <children>
                                           <ImageView fitHeight="80.0" fitWidth="200.0" layoutX="1020.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                              <image>
-                                                <Image url="@Imagenes/logo.jpeg" />
+                                                <Image url="@../Imagenes/logo.jpeg" />
                                              </image>
                                           </ImageView>
                                           <TableView layoutX="20.0" layoutY="75.0" prefHeight="500.0" prefWidth="1180.0" AnchorPane.bottomAnchor="44.799999999999955" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="75.0">
@@ -1079,7 +1079,7 @@
                                           </TableView>
                                           <ImageView fitHeight="80.0" fitWidth="200.0" layoutX="1020.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                              <image>
-                                                <Image url="@Imagenes/logo.jpeg" />
+                                                <Image url="@../Imagenes/logo.jpeg" />
                                              </image>
                                           </ImageView>
                                           <Label layoutX="20.0" layoutY="14.0" text="HISTORIAL" textFill="RED" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="14.0">
@@ -1112,12 +1112,12 @@
                                           </Label>
                                           <ImageView fitHeight="80.0" fitWidth="200.0" layoutX="1020.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                              <image>
-                                                <Image url="@Imagenes/logo.jpeg" />
+                                                <Image url="@../Imagenes/logo.jpeg" />
                                              </image>
                                           </ImageView>
                                           <ImageView fitHeight="626.0" fitWidth="546.0" layoutX="14.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="12.028149414062455" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="71.0">
                                              <image>
-                                                <Image url="@Imagenes/perfil.jpeg" />
+                                                <Image url="@../Imagenes/perfil.jpeg" />
                                              </image>
                                           </ImageView>
                                           <Label layoutX="610.0" layoutY="101.0" text="Nombre Completo :" AnchorPane.leftAnchor="610.0" AnchorPane.topAnchor="101.0">
