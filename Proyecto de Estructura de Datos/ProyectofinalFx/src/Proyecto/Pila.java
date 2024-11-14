@@ -1,9 +1,9 @@
 package Proyecto;
 
 import java.text.DecimalFormat;
+import javafx.scene.control.Button;
+import javafx.scene.control.TableView;
 import javax.swing.JOptionPane;
-import javax.swing.JTable;
-import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
 public class Pila {
@@ -43,17 +43,18 @@ public class Pila {
     }
     
     public Producto getCrearProducto(){
-        Producto tiq=null;
+        Button
+        Producto Pro=null;
         Nodo2<Producto> buscar=null;
         try{
-            buscar=getBuscarId(jtfIdtiq.getText());
+            buscar=getBuscarNombre_P(jtfIdtiq.getText());
             if(buscar!=null){
                 JOptionPane.showMessageDialog(null, 
                     "El idTique ya existe, intente nuevamente!");
                 return null;
             }
             else{
-                tiq=new Producto(
+                Pro=new Producto(
                     jtfIdtiq.getText(),
                     jtfDestino.getText(),
                     Float.parseFloat(jtfCosto.getText())    
@@ -129,7 +130,7 @@ public class Pila {
     //Este método actualiza el contenido de la fila
     //de un Table a partir de su modelo de datos 
     //(TableModel)
-    public void setLlenarTable(JTable tab) {
+    public void setLlenarTable(TableView tab) {
         int posFilaU = 0; //Este índice recorre los elementos de la Pila Tabla
         Nodo2<Producto> p = tope;  //Este nodo me mueve posición x posición en la fista
         DefaultTableModel miModelo = new DefaultTableModel();

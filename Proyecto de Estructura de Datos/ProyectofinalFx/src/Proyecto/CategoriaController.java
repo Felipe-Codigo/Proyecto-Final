@@ -6,6 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableView;
 import javafx.scene.layout.AnchorPane;
 
 
@@ -40,6 +41,9 @@ public class CategoriaController implements Initializable {
     
     @FXML
     private AnchorPane From_Categoria5;
+    
+     @FXML
+    private TableView Carrito_compra;
     
     public void cambiarFrom(ActionEvent event){
        

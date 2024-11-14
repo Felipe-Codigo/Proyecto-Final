@@ -33,6 +33,7 @@ public class Crear_CuentaController implements Initializable {
     
     @FXML
     private Button B_GuardarC;
+   
     
     @FXML
     public void eventButtonInicioS (ActionEvent event){

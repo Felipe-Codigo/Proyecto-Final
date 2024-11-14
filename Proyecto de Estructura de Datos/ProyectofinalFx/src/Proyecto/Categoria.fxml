@@ -982,10 +982,10 @@
                                  <children>
                                     <AnchorPane prefHeight="622.0" prefWidth="1220.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <children>
-                                          <TableView layoutX="20.0" layoutY="75.0" prefHeight="500.0" prefWidth="1180.0" AnchorPane.bottomAnchor="46.39999999999998" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="75.0">
+                                          <TableView fx:id="Carrito_compra" layoutX="20.0" layoutY="75.0" prefHeight="500.0" prefWidth="1180.0" AnchorPane.bottomAnchor="46.39999999999998" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="75.0">
                                             <columns>
                                               <TableColumn prefWidth="236.0" text="Producto" />
-                                              <TableColumn prefWidth="236.0" text="Nombre del producto" />
+                                              <TableColumn fx:id="FXNombre_P" prefWidth="236.0" text="Nombre del producto" />
                                                 <TableColumn prefWidth="236.0" text="Tipo de producto" />
                                                 <TableColumn prefWidth="236.0" text="Precio del producto" />
                                                 <TableColumn prefWidth="236.0" text="Opciones" />

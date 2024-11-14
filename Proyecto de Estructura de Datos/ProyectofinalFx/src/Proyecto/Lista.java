@@ -1,8 +1,14 @@
 package Proyecto;
 
+import java.util.ArrayList;
+import java.util.List;
+import javafx.collections.FXCollections;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javax.swing.JOptionPane;
-import javax.swing.JTable;
+import javafx.scene.control.TableColumn;
+import javafx.collections.ObservableList;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javax.swing.table.DefaultTableModel;
 
 public class Lista {
@@ -143,36 +149,39 @@ public class Lista {
                 "Nodo con Correo electronico "+Correo_e+" eliminado!");
         }
     }
-    
-    //Este método registra un dato al Table
-    public void setRegistrarFilaTable(DefaultTableModel miModelo,
-        int pFila, Nodo1<Usuario> p){
-        
-        miModelo.setValueAt(p.dato.Nombre_C, pFila, 0);
-        miModelo.setValueAt(p.dato.Correo_E, pFila, 1);
-        miModelo.setValueAt(p.dato.Contraseña, pFila, 2);
-        
-    }    
-    
-    //Este método actualiza el contenido de la fila
-    //de un Table a partir de su modelo de datos 
-    //(TableModel)
-    public void setLlenarJTable(JTable tab){
-        int posFilaU=0; //Este índice recorre los elementos de la fila Tabla
-        Nodo1<Usuario> p=cab;  //Este nodo me mueve posición x posición en la lista
-        DefaultTableModel miModelo=new DefaultTableModel();
+     // Usar un ArrayList para almacenar los datos de Usuario
+     private List<Usuario> usuariosList = new ArrayList<>();
 
-        miModelo.addColumn("IdTiquete");
-        miModelo.addColumn("Destino");
-        miModelo.addColumn("Valor tiquete");  
+     public void setRegistrarFilaTable(DefaultTableModel miModelo, int pFila, Nodo1<Usuario> p){
+     // Registra el usuario en el ArrayList
+     usuariosList.add(p.dato);  // Aquí puedes agregar el dato a una lista interna si deseas trabajar con los datos
+    
+     // Si deseas seguir utilizando DefaultTableModel en lugar de ObservableList:
+     miModelo.setValueAt(p.dato.Nombre_C, pFila, 0);
+     miModelo.setValueAt(p.dato.Correo_E, pFila, 1);
+     miModelo.setValueAt(p.dato.Contraseña, pFila, 2); 
+    
+     public void setllenarTable(TableView<Usuario> tab) {
+        // Crear la lista observable de usuarios
+        ObservableList<Usuario> usuariosList = FXCollections.observableArrayList(
+            new Usuario("Juan Pérez", "juan.perez@email.com", "12345"));
         
-        while(p!=null){                        
-            miModelo.addRow(new Object[]{"", "", ""});              
-            setRegistrarFilaTable(miModelo,posFilaU,p);            
-            p=p.sig;
-            posFilaU++;
-        }
-        tab.setModel(miModelo);
-    } 
+        // Establecer los elementos en la tabla
+        tab.setItems(usuariosList);
+
+        // Definir las columnas y asignarles la propiedad correspondiente
+        TableColumn<Usuario, String> colNombre = new TableColumn<>("Nombre Completo");
+        colNombre.setCellValueFactory(new PropertyValueFactory<>("Nombre_C"));
+        
+        TableColumn<Usuario, String> colCorreo = new TableColumn<>("Correo Electronico");
+        colCorreo.setCellValueFactory(new PropertyValueFactory<>("Correo_E"));
+        
+        TableColumn<Usuario, String> colContraseña = new TableColumn<>("Contraseña");
+        colContraseña.setCellValueFactory(new PropertyValueFactory<>("Contraseña"));
+        
+        // Agregar las columnas a la tabla
+        tab.getColumns().addAll(colNombre, colCorreo, colContraseña);
+    }
+  }
 }
 

@@ -17,10 +17,10 @@ import javafx.stage.Stage;
 public class LoginController implements Initializable {
     
     @FXML
-    private TextField T_CorreoE;
+    private TextField FXCorreoE;
     
     @FXML
-    private PasswordField T_Contrasena;
+    private PasswordField FXContrasena;
     
     @FXML
     private Button B_Entrar;
