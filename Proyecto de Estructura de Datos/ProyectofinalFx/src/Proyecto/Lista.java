@@ -1,5 +1,7 @@
 package Proyecto;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
 import javafx.collections.FXCollections;
@@ -160,12 +162,18 @@ public class Lista {
      miModelo.setValueAt(p.dato.Nombre_C, pFila, 0);
      miModelo.setValueAt(p.dato.Correo_E, pFila, 1);
      miModelo.setValueAt(p.dato.Contraseña, pFila, 2); 
-    
-     public void setllenarTable(TableView<Usuario> tab) {
+     }
+      public void setllenarTable(TableView<Usuario> tab) {
         // Crear la lista observable de usuarios
-        ObservableList<Usuario> usuariosList = FXCollections.observableArrayList(
-            new Usuario("Juan Pérez", "juan.perez@email.com", "12345"));
+        ObservableList<Usuario> usuariosList = FXCollections.observableArrayList();
         
+        // Recorrer la lista y agregar los usuarios
+        Nodo1<Usuario> nodo = cab;
+        while (nodo != null) {
+            usuariosList.add(nodo.dato);
+            nodo = nodo.sig;
+        }
+
         // Establecer los elementos en la tabla
         tab.setItems(usuariosList);
 
@@ -173,7 +181,7 @@ public class Lista {
         TableColumn<Usuario, String> colNombre = new TableColumn<>("Nombre Completo");
         colNombre.setCellValueFactory(new PropertyValueFactory<>("Nombre_C"));
         
-        TableColumn<Usuario, String> colCorreo = new TableColumn<>("Correo Electronico");
+        TableColumn<Usuario, String> colCorreo = new TableColumn<>("Correo Electrónico");
         colCorreo.setCellValueFactory(new PropertyValueFactory<>("Correo_E"));
         
         TableColumn<Usuario, String> colContraseña = new TableColumn<>("Contraseña");
@@ -182,6 +190,20 @@ public class Lista {
         // Agregar las columnas a la tabla
         tab.getColumns().addAll(colNombre, colCorreo, colContraseña);
     }
-  }
+      public void GuardarArchivoBlock(ObservableList<Usuario> Usuario){
+          try{
+              BufferedWriter escritorio = new BufferedWriter(new FileWriter("D:\\Tb_Usuario.txt"));
+              for (Usuario ls: Usuario){
+                  escritorio.write(ls.getNombre_C()+"\t"+ls.getCorreo_E()+"\t"+ls.getContraseña());
+                  escritorio.newLine();
+              }
+              escritorio.close();
+          }catch(Exception e){
+              JOptionPane.showMessageDialog(null,
+                "Error: "+e+"\nEl nodo no fue creado y guardado, intente"
+                + "nuevamente.");
+          }
+      }
+  
 }
 

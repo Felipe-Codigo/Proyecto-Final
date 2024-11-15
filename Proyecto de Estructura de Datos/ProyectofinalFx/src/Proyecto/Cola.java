@@ -60,8 +60,7 @@ public class Cola {
     public Producto getCrearProducto(
             JTextField jtfNcta,
             JTextField jtfNcli,
-            JTextField jtfsaldo,
-            JCheckBox jcbEstado
+            JTextField jtfsaldo
     ) {
         Producto info = null;
         Nodo3<Producto> buscar = null;
@@ -75,11 +74,10 @@ public class Cola {
                 jtfNcta.requestFocus();
                 return null;
             } else {
-                info = new producto(
+                info = new Producto(
                         jtfNcta.getText(),
                         jtfNcli.getText(),
-                        Float.parseFloat(jtfsaldo.getText()),
-                        jcbEstado.isSelected()
+                        Integer.parseInt(jtfsaldo.getText())    
                 );
                 return info;
             }
@@ -94,8 +92,7 @@ public class Cola {
     public void setAddCola(
             JTextField jtfNcta,
             JTextField jtfNcli,
-            JTextField jtfsaldo,
-            JCheckBox jcbEstado
+            JTextField jtfsaldo
     ) {
         try {
             // Verificar si ya existe una cuenta con ese número en la Cola
@@ -108,11 +105,11 @@ public class Cola {
             }
 
             // Crear una nueva cuenta
-            Producto miProducto = new producto(
+            Producto miProducto = new Producto(
                     jtfNcta.getText(),
                     jtfNcli.getText(),
-                    Float.parseFloat(jtfsaldo.getText()),
-                    jcbEstado.isSelected());
+                    Integer.parseInt(jtfsaldo.getText()));
+                    
 
             if (miProducto != null) {
                 Nodo3<Producto> info = new Nodo3<>(miProducto);
@@ -156,11 +153,10 @@ public class Cola {
             }
 
             // Crear una nueva cuenta
-            Producto miProducto = new producto(
+            Producto miProducto = new Producto(
                     jtfNcta.getText(),
                     jtfNcli.getText(),
-                    Float.parseFloat(jtfsaldo.getText()),
-                    jcbEstado.isSelected());
+                    Integer.parseInt(jtfsaldo.getText()));
 
             if (miProducto != null) {
                 Nodo3<Producto> info = new Nodo3<>(miProducto);

@@ -12,10 +12,12 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import javax.swing.JOptionPane;
 
 
 public class LoginController implements Initializable {
-    
+    Lista Usuario;
+
     @FXML
     private TextField FXCorreoE;
     
@@ -31,12 +33,23 @@ public class LoginController implements Initializable {
     @FXML
     public void eventButtonCrearC (ActionEvent event){
         cambiarVentana (event, "Crear_Cuenta.fxml");
+        
     }
     @FXML
     public void eventButtonEntrar (ActionEvent event){
-        cambiarVentana (event, "Categoria.fxml");
+        // Obtener los valores del correo y la contraseña ingresados
+        String correo = FXCorreoE.getText();
+        String contrasena = FXContrasena.getText();
+
+        // Validar los datos
+        if (FXCorreoE.getText().equals(correo)&& FXContrasena.equals(contrasena)) {
+            cambiarVentana(event, "Categoria.fxml");
+        } else {
+            // Mostrar mensaje de error si los datos son incorrectos
+            JOptionPane.showMessageDialog(null, "Correo o contraseña incorrecta.");
+        }
     }
-    
+  
     public void cambiarVentana(ActionEvent event, String fxmlFile) {
         
         Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
