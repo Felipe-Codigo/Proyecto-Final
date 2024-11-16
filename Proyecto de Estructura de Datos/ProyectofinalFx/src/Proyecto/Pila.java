@@ -1,3 +1,4 @@
+
 package Proyecto;
 
 import java.text.DecimalFormat;
@@ -27,13 +28,13 @@ public class Pila {
         }
     }
     
-    public Nodo2<Producto> getBuscarNombre_P(String Pro){
+    public Nodo2<Producto> getBuscarId_P(String Id){
         if(getEsPilaVacia())
             return null;
         else{
             Nodo2<Producto> p=tope;
             do{
-                if(p.dato.Nombre_P.equals(Pro))
+                if(p.dato.Nombre_P.equals(Id))
                     return p;
                 else
                     p=p.sig;
@@ -42,24 +43,21 @@ public class Pila {
         }
     }
     
-    public Producto getCrearProducto(){
-        Button
+    public Producto getCrearProducto(String Id_P, String Nombre_P, String Tipo_P, int Precio_P){
+        Button 
         Producto Pro=null;
         Nodo2<Producto> buscar=null;
         try{
-            buscar=getBuscarNombre_P(jtfIdtiq.getText());
+            buscar=getBuscarNombre_P(Id_p.getText());
             if(buscar!=null){
                 JOptionPane.showMessageDialog(null, 
                     "El idTique ya existe, intente nuevamente!");
                 return null;
             }
             else{
-                Pro=new Producto(
-                    jtfIdtiq.getText(),
-                    jtfDestino.getText(),
-                    Float.parseFloat(jtfCosto.getText())    
+                Pro=new Producto()    
                 );
-                return tiq;
+                return Pro;
             }
         }catch(Exception e){
             JOptionPane.showMessageDialog(null, "Error: "+e);
@@ -120,10 +118,11 @@ public class Pila {
     public void setRegistrarFilaTable(DefaultTableModel miModelo,
         int pFila, Nodo2<Producto> p){
         
-        miModelo.setValueAt(p.dato.Nombre_P, pFila, 0);
-        miModelo.setValueAt(p.dato.Tipo_P, pFila, 1);
+        miModelo.setValueAt(p.dato.Id_P, pFila, 0);
+        miModelo.setValueAt(p.dato.Nombre_P, pFila, 1);
+        miModelo.setValueAt(p.dato.Tipo_P, pFila, 2);
         DecimalFormat df = new DecimalFormat(".00");
-        miModelo.setValueAt(df.format (p.dato.Precio_P), pFila, 2);
+        miModelo.setValueAt(df.format (p.dato.Precio_P), pFila, 3);
         
     }    
     
@@ -134,10 +133,11 @@ public class Pila {
         int posFilaU = 0; //Este índice recorre los elementos de la Pila Tabla
         Nodo2<Producto> p = tope;  //Este nodo me mueve posición x posición en la fista
         DefaultTableModel miModelo = new DefaultTableModel();
-
-        miModelo.addColumn("IdTiquete");
-        miModelo.addColumn("Destino");
-        miModelo.addColumn("Valor tiquete");
+        
+        miModelo.addColumn("Producto");
+        miModelo.addColumn("Nombre del producto");
+        miModelo.addColumn("tipo de producto");
+        miModelo.addColumn("Precio del producto");
 
         if (tope == null) {
             tab.setModel(miModelo);

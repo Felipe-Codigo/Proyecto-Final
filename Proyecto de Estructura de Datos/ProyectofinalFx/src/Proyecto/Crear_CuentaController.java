@@ -1,5 +1,6 @@
 package Proyecto;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.collections.ObservableList;
@@ -23,13 +24,13 @@ public class Crear_CuentaController implements Initializable {
    Lista Usuario;
 
     @FXML
-    private TextField T_NomCom;
+    private TextField FXNombre_C;
     
     @FXML
-    private TextField T_CorEl;
+    private TextField FXCorreo_E;
     
     @FXML
-    private TextField T_Contras;
+    private TextField FXContraseña;
     
     @FXML
     private Button B_InicioS;
@@ -38,6 +39,7 @@ public class Crear_CuentaController implements Initializable {
     private Button B_GuardarC;
    
     
+     
     @FXML
     public void eventButtonInicioS (ActionEvent event){
         cambiarVentana (event, "Login.fxml");
@@ -46,30 +48,13 @@ public class Crear_CuentaController implements Initializable {
    public void eventButtonGuardarC(ActionEvent event) {
         // Crear un nuevo usuario con los datos del formulario
         Usuario nuevoUsuario = new Usuario(
-            T_NomCom.getText(),
-            T_CorEl.getText(),
-            T_Contras.getText()
+            FXNombre_C.getText(),
+            FXCorreo_E.getText(),
+            FXContraseña.getText()
         );
-        
-        // Validar que el correo no esté vacío y no exista en la lista
-        Nodo1<Usuario> nodoExistente = Usuario.getBuscarCorreo_E(T_CorEl.getText());
-        if (nodoExistente != null) {
-            JOptionPane.showMessageDialog(null, "El correo ya está registrado.");
-            return; // Salir si el correo ya existe
-        }
-        
-        // Si no existe, agregar el nuevo usuario a la lista
-        Usuario.setAddNodoF(T_NomCom, T_CorEl, T_Contras); // Agregar nodo a la lista
-
-        // Guardar los usuarios en el archivo
-        Usuario.GuardarArchivoBlock((ObservableList<Proyecto.Usuario>) Usuario);// Llamamos al método para guardar
-        
-        // Limpiar los campos del formulario
-        T_NomCom.clear();
-        T_CorEl.clear();
-        T_Contras.clear();
-        
-        JOptionPane.showMessageDialog(null, "Usuario guardado correctamente.");
+        Usuario.getCrearUsuario(FXNombre_C, FXCorreo_E, FXContraseña);
+        Usuario.setAddNodoF(FXNombre_C, FXCorreo_E, FXContraseña);
+      
     }
     
     public void cambiarVentana(ActionEvent event, String fxmlFile) {
@@ -86,7 +71,7 @@ public class Crear_CuentaController implements Initializable {
             Stage newStage = new Stage();
             newStage.setScene(scene);
             newStage.show();
-        }catch (Exception e){
+        }catch (IOException e){
             e.printStackTrace();
         }   
     }
