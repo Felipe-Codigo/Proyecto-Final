@@ -122,7 +122,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button layoutX="300.0" layoutY="150.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar1" layoutX="300.0" layoutY="150.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -146,7 +146,7 @@
                                                                               <Image url="@../Imagenes/img2.png" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button layoutX="300.0" layoutY="150.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar2" layoutX="300.0" layoutY="150.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -174,7 +174,7 @@
                                                                               <Image url="@../Imagenes/img3.png" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button layoutX="300.0" layoutY="150.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar3" layoutX="300.0" layoutY="150.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -206,7 +206,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button layoutX="300.0" layoutY="150.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar4" layoutX="300.0" layoutY="150.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -234,7 +234,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button layoutX="300.0" layoutY="150.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar5" layoutX="300.0" layoutY="150.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -262,7 +262,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button layoutX="300.0" layoutY="150.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar6" layoutX="300.0" layoutY="150.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -294,7 +294,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar7" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -318,7 +318,7 @@
                                                                               <Image url="@../Imagenes/img8.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar8" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -346,7 +346,7 @@
                                                                               <Image url="@../Imagenes/img9.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar9" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -378,7 +378,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar10" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -406,7 +406,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar11" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -434,7 +434,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar12" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -466,7 +466,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar13" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -490,7 +490,7 @@
                                                                               <Image url="@../Imagenes/img14.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar14" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -518,7 +518,7 @@
                                                                               <Image url="@../Imagenes/img15.jpeg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar15" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -550,7 +550,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar16" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -578,7 +578,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar17" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -606,7 +606,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar18" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -638,7 +638,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar19" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -662,7 +662,7 @@
                                                                               <Image url="@../Imagenes/img20.jpeg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar20" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -690,7 +690,7 @@
                                                                               <Image url="@../Imagenes/img21.jpeg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar21" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -722,7 +722,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar22" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -750,7 +750,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar23" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -778,7 +778,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar24" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -810,7 +810,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar25" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -834,7 +834,7 @@
                                                                               <Image url="@../Imagenes/img26.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar26" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -862,7 +862,7 @@
                                                                               <Image url="@../Imagenes/img27.jpeg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar27" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -894,7 +894,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar28" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -922,7 +922,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar29" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -950,7 +950,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar30" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -984,11 +984,11 @@
                                        <children>
                                           <TableView fx:id="Carrito_compra" layoutX="20.0" layoutY="75.0" prefHeight="500.0" prefWidth="1180.0" AnchorPane.bottomAnchor="46.39999999999998" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="75.0">
                                             <columns>
-                                              <TableColumn prefWidth="236.0" text="Producto" />
+                                              <TableColumn fx:id="FXidpro" prefWidth="236.0" text="Producto" />
                                               <TableColumn fx:id="FXNombre_P" prefWidth="236.0" text="Nombre del producto" />
-                                                <TableColumn prefWidth="236.0" text="Tipo de producto" />
-                                                <TableColumn prefWidth="236.0" text="Precio del producto" />
-                                                <TableColumn prefWidth="236.0" text="Opciones" />
+                                                <TableColumn fx:id="FXTipoP" prefWidth="236.0" text="Tipo de producto" />
+                                                <TableColumn fx:id="FXPrecio" prefWidth="236.0" text="Precio del producto" />
+                                                <TableColumn fx:id="Fxop_Eliminar" prefWidth="236.0" text="Opciones" />
                                             </columns>
                                           </TableView>
                                           <Label layoutX="28.0" layoutY="590.0" text="Cantidad de productos :" AnchorPane.bottomAnchor="8.400000000000023" AnchorPane.leftAnchor="28.0">
@@ -1035,14 +1035,14 @@
                                                 <Image url="@../Imagenes/logo.jpeg" />
                                              </image>
                                           </ImageView>
-                                          <TableView layoutX="20.0" layoutY="75.0" prefHeight="500.0" prefWidth="1180.0" AnchorPane.bottomAnchor="44.799999999999955" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="75.0">
+                                          <TableView fx:id="Favorito" layoutX="20.0" layoutY="75.0" onSort="#agregarAlCarrito" prefHeight="500.0" prefWidth="1180.0" AnchorPane.bottomAnchor="44.799999999999955" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="75.0">
                                              <columns>
-                                                <TableColumn prefWidth="200.0" text="Producto" />
-                                                <TableColumn prefWidth="200.0" text="Nombre del producto" />
-                                                <TableColumn prefWidth="200.0" text="Tipo de producto" />
-                                                <TableColumn prefWidth="200.0" text="Precio del producto" />
-                                                <TableColumn prefWidth="200.0" text="Opciones" />
-                                                <TableColumn prefWidth="180.0" text="Opciones" />
+                                                <TableColumn fx:id="FXidpro" prefWidth="200.0" text="Producto" />
+                                                <TableColumn fx:id="FXNombre_P" prefWidth="200.0" text="Nombre del producto" />
+                                                <TableColumn fx:id="FXTipoP" prefWidth="200.0" text="Tipo de producto" />
+                                                <TableColumn fx:id="FXPrecio" prefWidth="200.0" text="Precio del producto" />
+                                                <TableColumn fx:id="FXop_Eliminar" prefWidth="200.0" text="Opciones" />
+                                                <TableColumn fx:id="FXop_Comprar" prefWidth="180.0" text="Opciones" />
                                              </columns>
                                           </TableView>
                                           <Label layoutX="20.0" layoutY="14.0" text="FAVORITOS" textFill="RED" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="14.0">
@@ -1068,13 +1068,13 @@
                                  <children>
                                     <AnchorPane prefHeight="620.0" prefWidth="1220.0" AnchorPane.bottomAnchor="1.6000000000000227" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <children>
-                                          <TableView layoutX="20.0" layoutY="75.0" prefHeight="500.0" prefWidth="1180.0" AnchorPane.bottomAnchor="44.799999999999955" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="75.0">
+                                          <TableView fx:id="Historial" layoutX="20.0" layoutY="75.0" prefHeight="500.0" prefWidth="1180.0" AnchorPane.bottomAnchor="44.799999999999955" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="75.0">
                                              <columns>
-                                                <TableColumn prefWidth="236.0" text="Producto" />
-                                                <TableColumn prefWidth="236.0" text="Nombre del producto" />
-                                                <TableColumn prefWidth="236.0" text="Tipo de producto" />
-                                                <TableColumn prefWidth="236.0" text="Precio del producto" />
-                                                <TableColumn prefWidth="236.0" text="Fecha de compra" />
+                                                <TableColumn fx:id="FXidpro" prefWidth="236.0" text="Producto" />
+                                                <TableColumn fx:id="FXNombre_P" prefWidth="236.0" text="Nombre del producto" />
+                                                <TableColumn fx:id="FXTipoP" prefWidth="236.0" text="Tipo de producto" />
+                                                <TableColumn fx:id="FXPrecio" prefWidth="236.0" text="Precio del producto" />
+                                                <TableColumn fx:id="FXFecha" prefWidth="236.0" text="Fecha de compra" />
                                              </columns>
                                           </TableView>
                                           <ImageView fitHeight="80.0" fitWidth="200.0" layoutX="1020.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">

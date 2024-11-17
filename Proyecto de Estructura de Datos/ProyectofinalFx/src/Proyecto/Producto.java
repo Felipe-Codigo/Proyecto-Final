@@ -44,6 +44,11 @@ public class Producto {
     public void setPrecio_P(int Precio_P) {
         this.Precio_P = Precio_P;
     }
+
+    @Override
+    public String toString() {
+        return "Producto{" + "Id_P=" + Id_P + ", Nombre_P=" + Nombre_P + ", Tipo_P=" + Tipo_P + ", Precio_P=" + Precio_P + '}';
+    }
     
     
 }

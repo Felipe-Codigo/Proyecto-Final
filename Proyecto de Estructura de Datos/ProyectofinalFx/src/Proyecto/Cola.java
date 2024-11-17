@@ -35,13 +35,13 @@ public class Cola {
         }
     }
 
-    public Nodo3<Producto> getBuscarNombre_P(String Nombre_P) {
+    public Nodo3<Producto> getBuscarId_P(String Id) {
         if (getEsColaVacia()) {
             return null;
         } else {
             Nodo3<Producto> p = inicio;
             do {
-                if (p.dato.Nombre_P.equals(Nombre_P)) {
+                if (p.dato.Nombre_P.equals(Id)) {
                     return p;
                 } else {
                     p = p.sig;
@@ -51,34 +51,18 @@ public class Cola {
         }
     }
 
-    // Mejorado: Método para buscar un nodo por su número de cuenta utilizando la tabla hash
-    public Nodo3<Producto> getBuscarNombre_p(String Nombre_P) {
-        // Busca el nodo en la tabla hash
-        return indiceProducto.get(Nombre_P);
-    }
-
-    public Producto getCrearProducto(
-            JTextField jtfNcta,
-            JTextField jtfNcli,
-            JTextField jtfsaldo
-    ) {
+    public Producto getCrearProducto(String Id_P, String Nombre_P, String Tipo_P, int Precio_P) {
         Producto info = null;
         Nodo3<Producto> buscar = null;
         try {
-            buscar = getBuscarNombre_P(jtfNcta.getText());
+            buscar = getBuscarId_P(Id_P);
             if (buscar != null) {
-                JOptionPane.showMessageDialog(null,
-                        "El Nro. Cuenta ya existe! \n"
-                        + "Intente nuevamente!");
-                jtfNcta.setText("");
-                jtfNcta.requestFocus();
+                JOptionPane.showMessageDialog(null, 
+                    "El idTique ya existe, intente nuevamente!");
                 return null;
             } else {
-                info = new Producto(
-                        jtfNcta.getText(),
-                        jtfNcli.getText(),
-                        Integer.parseInt(jtfsaldo.getText())    
-                );
+                info = new Producto(Id_P, Nombre_P, Tipo_P, Precio_P);   
+                
                 return info;
             }
         } catch (Exception e) {
@@ -89,26 +73,17 @@ public class Cola {
         }
     }
 
-    public void setAddCola(
-            JTextField jtfNcta,
-            JTextField jtfNcli,
-            JTextField jtfsaldo
-    ) {
+    public void setAddCola(String Id_P, String Nombre_P, String Tipo_P, int Precio_P) {
         try {
             // Verificar si ya existe una cuenta con ese número en la Cola
-            if (getBuscarNombre_P(jtfNcta.getText())!=null) {
-                JOptionPane.showMessageDialog(null,
-                        "Error: Ya existe una cuenta con ese número. Ingrese un número de cuenta diferente.");
-                jtfNcta.setText("");  // Limpiar el campo del número de cuenta
-                jtfNcta.requestFocus();  // Solicitar que el usuario ingrese otro número
-                return;  // Salir sin agregar la cuenta
+            if (getBuscarId_P(Id_P)!=null) {
+                JOptionPane.showMessageDialog(null, 
+                    "El idTique ya existe, intente nuevamente!");
+                return;
             }
 
             // Crear una nueva cuenta
-            Producto miProducto = new Producto(
-                    jtfNcta.getText(),
-                    jtfNcli.getText(),
-                    Integer.parseInt(jtfsaldo.getText()));
+            Producto miProducto = new Producto(Id_P, Nombre_P, Tipo_P, Precio_P);
                     
 
             if (miProducto != null) {
@@ -126,37 +101,24 @@ public class Cola {
                 indiceProducto.put(miProducto.Nombre_P, info);
                 JOptionPane.showMessageDialog(null, "Elemento registrado correctamente.");
             }
-        } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(null, "Error: El saldo debe ser un número válido.");
-            jtfsaldo.setText("");
-            jtfsaldo.requestFocus();
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Error inesperado: " + e.getMessage());
         }
     }
 
     // Mejorado: Método para agregar un nodo a la cola y actualizar la tabla hash
-    public void setAddColaH(
-            JTextField jtfNcta,
-            JTextField jtfNcli,
-            JTextField jtfsaldo,
-            JCheckBox jcbEstado
-    ) {
+    public void setAddColaH(String Id_P, String Nombre_P, String Tipo_P, int Precio_P) {
         try {
             // Verificar si ya existe una cuenta con ese número en la tabla hash
-            if (indiceProducto.containsKey(jtfNcta.getText())) {
+            if (indiceProducto.containsKey(Id_P)) {
                 JOptionPane.showMessageDialog(null,
                         "Error: Ya existe una cuenta con ese número. Ingrese un número de cuenta diferente.");
-                jtfNcta.setText("");  // Limpiar el campo del número de cuenta
-                jtfNcta.requestFocus();  // Solicitar que el usuario ingrese otro número
+           
                 return;  // Salir sin agregar la cuenta
             }
 
             // Crear una nueva cuenta
-            Producto miProducto = new Producto(
-                    jtfNcta.getText(),
-                    jtfNcli.getText(),
-                    Integer.parseInt(jtfsaldo.getText()));
+            Producto miProducto = new Producto(Id_P, Nombre_P, Tipo_P, Precio_P);
 
             if (miProducto != null) {
                 Nodo3<Producto> info = new Nodo3<>(miProducto);
@@ -172,11 +134,7 @@ public class Cola {
                 // Agrega el nodo a la tabla hash para que sea fácil de buscar
                 indiceProducto.put(miProducto.Nombre_P, info);
                 JOptionPane.showMessageDialog(null, "Elemento registrado correctamente.");
-            }
-        } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(null, "Error: El saldo debe ser un número válido.");
-            jtfsaldo.setText("");
-            jtfsaldo.requestFocus();
+            } 
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Error inesperado: " + e.getMessage());
         }
@@ -188,7 +146,7 @@ public class Cola {
                     "La cola esta vacía, sin nada que atender!");
         } else {
             Nodo3<Producto> p = inicio;
-            String nCta = p.dato.Nombre_P;
+            String id_p = p.dato.Id_P;
             if (inicio.sig == inicio) {
                 inicio = null;
             } else {
@@ -199,20 +157,20 @@ public class Cola {
                 p = null;
             }
             // Eliminamos el nodo de la tabla hash
-            indiceProducto.remove(nCta);
+            indiceProducto.remove(id_p);
             JOptionPane.showMessageDialog(null,
                     "Nodo atendido!");
         }
     }
 
     // Método para eliminar un nodo específico por número de cuenta
-    public void seteliminarNodo(String Nombre_P) {
+    public void seteliminarNodo(String Id_P) {
         if (getEsColaVacia()) {
             JOptionPane.showMessageDialog(null, "La cola está vacía, no se puede eliminar nada.");
             return;
         }
 
-        Nodo3<Producto> nodoAEliminar = getBuscarNombre_p(Nombre_P);  // Buscamos el nodo a eliminar
+        Nodo3<Producto> nodoAEliminar = getBuscarId_P(Id_P);  // Buscamos el nodo a eliminar
         if (nodoAEliminar == null) {
             JOptionPane.showMessageDialog(null, "No se encontró ninguna cuenta con ese número.");
             return;
@@ -233,42 +191,10 @@ public class Cola {
         }
 
         // Eliminamos el nodo de la tabla hash
-        indiceProducto.remove(Nombre_P);
+        indiceProducto.remove(Id_P);
         JOptionPane.showMessageDialog(null, "Nodo eliminado con éxito.");
     }
 
-    public void setOrdenaSaldo() {
-        if (!getEsColaVacia()) {
-            Nodo3<Producto> i = inicio, j;
-            Producto aux = null;
-            do {
-                j = inicio;
-                do {
-                    if (j.dato.Precio_P >= j.sig.dato.Precio_P) {
-                        //Copio la información del siguiente
-                        //en una nueva cuenta.
-                        aux = new Producto(
-                                j.sig.dato.Nombre_P,
-                                j.sig.dato.Tipo_P,
-                                j.sig.dato.Precio_P
-                        );
-                        //Paso la cuenta del anterior a la posición 
-                        //siguiente.
-                        j.sig.dato.Nombre_P = j.dato.Nombre_P;
-                        j.sig.dato.Tipo_P = j.dato.Tipo_P;
-                        j.sig.dato.Precio_P = j.dato.Precio_P;
-                        //Paso la cuenta del siguiente (aux)
-                        //al anterior.
-                        j.dato.Nombre_P = aux.Nombre_P;
-                        j.dato.Tipo_P = aux.Tipo_P;
-                        j.dato.Precio_P = aux.Precio_P;
-                    } else {
-                        j = j.sig;
-                    }
-                } while (j.sig != inicio);
-            } while (i != inicio);
-        }
-    }
 
     // Método para invertir el orden de los nodos en la cola circular doblemente enlazada
     public void setinvertirCola() {
@@ -387,20 +313,6 @@ public class Cola {
         tab.setModel(miModelo);
     }
 
-    // Método principal para iniciar la ordenación de la cola por saldo
-    public void setOrdenaSaldoM() {
-        if (!getEsColaVacia()) {  // Si la cola NO está vacía
-            inicio = mergeSort(inicio);  // Llama a mergeSort para ordenar
-
-            // Reconectar el último nodo al primero para hacerla circular nuevamente
-            Nodo3<Producto> temp = inicio;
-            while (temp.sig != null && temp.sig != inicio) {
-                temp = temp.sig;  // Se mueve hasta llegar al último nodo
-            }
-            inicio.ant = temp;  // El primer nodo apunta hacia atrás al último nodo
-            temp.sig = inicio;  // El último nodo apunta hacia adelante al primero
-        }
-    }
 
     // Método mergeSort: Divide la lista en dos mitades y luego las ordena
     private Nodo3<Producto> mergeSort(Nodo3<Producto> head) {

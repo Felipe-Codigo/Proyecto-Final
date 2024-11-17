@@ -37,17 +37,8 @@ public class LoginController implements Initializable {
     }
     @FXML
     public void eventButtonEntrar (ActionEvent event){
-        // Obtener los valores del correo y la contraseña ingresados
-        String correo = FXCorreoE.getText();
-        String contrasena = FXContrasena.getText();
-
-        // Validar los datos
-        if (FXCorreoE.getText().equals(correo)&& FXContrasena.equals(contrasena)) {
-            cambiarVentana(event, "Categoria.fxml");
-        } else {
-            // Mostrar mensaje de error si los datos son incorrectos
-            JOptionPane.showMessageDialog(null, "Correo o contraseña incorrecta.");
-        }
+        cambiarVentana(event, "Categoria.fxml");
+        
     }
   
     public void cambiarVentana(ActionEvent event, String fxmlFile) {

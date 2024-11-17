@@ -1,9 +1,13 @@
 
 package Proyecto;
 
-import java.text.DecimalFormat;
-import javafx.scene.control.Button;
+import java.util.ArrayList;
+import java.util.List;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -28,13 +32,13 @@ public class Pila {
         }
     }
     
-    public Nodo2<Producto> getBuscarId_P(String Id){
+    public Nodo2<Producto> getBuscarId_P(String Id_P){
         if(getEsPilaVacia())
             return null;
         else{
             Nodo2<Producto> p=tope;
             do{
-                if(p.dato.Nombre_P.equals(Id))
+                if(p.dato.Id_P.equals(Id_P))
                     return p;
                 else
                     p=p.sig;
@@ -44,19 +48,18 @@ public class Pila {
     }
     
     public Producto getCrearProducto(String Id_P, String Nombre_P, String Tipo_P, int Precio_P){
-        Button 
         Producto Pro=null;
         Nodo2<Producto> buscar=null;
         try{
-            buscar=getBuscarNombre_P(Id_p.getText());
+            buscar=getBuscarId_P(Id_P);
             if(buscar!=null){
                 JOptionPane.showMessageDialog(null, 
-                    "El idTique ya existe, intente nuevamente!");
+                    "El Producto ya existe, intente nuevamente!");
                 return null;
             }
             else{
-                Pro=new Producto()    
-                );
+                Pro=new Producto(Id_P, Nombre_P, Tipo_P, Precio_P);    
+                
                 return Pro;
             }
         }catch(Exception e){
@@ -79,7 +82,7 @@ public class Pila {
     }
     
     public void setPush(){
-        Producto Pro=getCrearProducto();
+        Producto Pro=getCrearProducto("","","",00);
         if(Pro!=null){
             Nodo2<Producto> info=new Nodo2(Pro);
             if(tope==null){
@@ -114,43 +117,82 @@ public class Pila {
         }
     }
     
-    //Este método registra un dato al JTable
-    public void setRegistrarFilaTable(DefaultTableModel miModelo,
-        int pFila, Nodo2<Producto> p){
-        
-        miModelo.setValueAt(p.dato.Id_P, pFila, 0);
-        miModelo.setValueAt(p.dato.Nombre_P, pFila, 1);
-        miModelo.setValueAt(p.dato.Tipo_P, pFila, 2);
-        DecimalFormat df = new DecimalFormat(".00");
-        miModelo.setValueAt(df.format (p.dato.Precio_P), pFila, 3);
-        
-    }    
-    
-    //Este método actualiza el contenido de la fila
-    //de un Table a partir de su modelo de datos 
-    //(TableModel)
-    public void setLlenarTable(TableView tab) {
-        int posFilaU = 0; //Este índice recorre los elementos de la Pila Tabla
-        Nodo2<Producto> p = tope;  //Este nodo me mueve posición x posición en la fista
-        DefaultTableModel miModelo = new DefaultTableModel();
-        
-        miModelo.addColumn("Producto");
-        miModelo.addColumn("Nombre del producto");
-        miModelo.addColumn("tipo de producto");
-        miModelo.addColumn("Precio del producto");
+    private List<Producto> productosList = new ArrayList<>();
 
-        if (tope == null) {
-            tab.setModel(miModelo);
-        } else {
-            do {
-                miModelo.addRow(new Object[]{"", "", ""});
-                setRegistrarFilaTable(miModelo, posFilaU, p);
-                p = p.sig;
-                posFilaU++;
-            } while (p != tope);
-            tab.setModel(miModelo);
-        }
-    } 
+   public void setRegistrarFilaTable(TableView<Producto> table) {
+    ObservableList<Producto> productosList = FXCollections.observableArrayList();
+
+    // Verifica si la pila no está vacía
+    if (!getEsPilaVacia()) {
+        Nodo2<Producto> nodo = tope;  // Empezamos desde el tope de la pila
+
+        // Recorremos la pila circular y agregamos los productos a la lista observable
+        do {
+            productosList.add(nodo.dato);  // Agregar producto a la lista observable
+            nodo = nodo.sig;  // Avanzamos al siguiente nodo
+        } while (nodo != tope);  // Detenemos cuando volvemos al tope
+    }
+
+    // Asignar los productos a la tabla
+    table.setItems(productosList);  // Esto actualiza la tabla con los productos
+
+    // Asegúrate de definir las columnas en otro lugar (por ejemplo, en la configuración inicial de la tabla)
+    // Si no las has definido, debes hacerlo ahora.
+
+    // Definir las columnas si no están definidas (si las columnas ya existen, puedes omitir esto)
+    TableColumn<Producto, String> colId = new TableColumn<>("Producto");
+    colId.setCellValueFactory(new PropertyValueFactory<>("Id_P"));
+
+    TableColumn<Producto, String> colNombre = new TableColumn<>("Nombre");
+    colNombre.setCellValueFactory(new PropertyValueFactory<>("Nombre_P"));
+
+    TableColumn<Producto, String> colTipo = new TableColumn<>("Tipo");
+    colTipo.setCellValueFactory(new PropertyValueFactory<>("Tipo_P"));
+
+    TableColumn<Producto, String> colPrecio = new TableColumn<>("Precio");
+    colPrecio.setCellValueFactory(new PropertyValueFactory<>("Precio_P"));
+
+    // Si las columnas no se han agregado aún, puedes agregarlas aquí
+    if (table.getColumns().isEmpty()) {
+        table.getColumns().addAll(colId, colNombre, colTipo, colPrecio);
+    }
+}
+     
+     public void setllenarTable(TableView<Producto> tab) {
+        // Crear la lista observable de usuarios
+        ObservableList<Producto> productosList = FXCollections.observableArrayList();
+        
+        // Recorrer la lista y agregar los usuarios
+        if (!getEsPilaVacia()) {
+        Nodo2<Producto> nodo = tope;
+        do {
+            productosList.add(nodo.dato);  // Agregamos el producto a la lista observable
+            nodo = nodo.sig;  // Avanzamos al siguiente nodo
+        } while (nodo != tope);  // Detenemos cuando volvemos al tope
+    }
+
+
+        // Establecer los elementos en la tabla
+        tab.setItems(productosList);
+
+        // Definir las columnas y asignarles la propiedad correspondiente
+        TableColumn<Producto, String> colId = new TableColumn<>("Producto");
+        colId.setCellValueFactory(new PropertyValueFactory<>("Id_P"));
+        
+        TableColumn<Producto, String> colNombre = new TableColumn<>("Nombre del producto");
+        colNombre.setCellValueFactory(new PropertyValueFactory<>("Nombre_P"));
+        
+        TableColumn<Producto, String> colTipo = new TableColumn<>("Tipo");
+        colTipo.setCellValueFactory(new PropertyValueFactory<>("Tipo_P"));
+        
+        TableColumn<Producto, String> colPrecio = new TableColumn<>("Precio del producto");
+        colPrecio.setCellValueFactory(new PropertyValueFactory<>("Precio_P"));
+        
+        
+        
+        // Agregar las columnas a la tabla
+        tab.getColumns().addAll(colId, colNombre, colTipo, colPrecio);
+    }
     
     public void getSumaPro(){
         float cant, sum=0;
@@ -166,4 +208,5 @@ public class Pila {
             }while(p!=tope);
         }
     } 
+    
 }
