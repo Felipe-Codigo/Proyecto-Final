@@ -113,7 +113,7 @@
                                                                               <Image url="@../Imagenes/img1.png" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos1" contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -151,7 +151,7 @@
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
                                                                         </Button>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos2" contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -179,7 +179,7 @@
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
                                                                         </Button>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos3" contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -197,7 +197,7 @@
                                                                               <Image url="@../Imagenes/img4.png" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos4" contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -225,7 +225,7 @@
                                                                               <Image url="@../Imagenes/img5.png" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos5" contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -253,7 +253,7 @@
                                                                               <Image url="@../Imagenes/img6.png" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos6" contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -285,7 +285,7 @@
                                                                               <Image url="@../Imagenes/img7.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos7" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -323,7 +323,7 @@
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
                                                                         </Button>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos8" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -351,7 +351,7 @@
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
                                                                         </Button>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos9" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -369,7 +369,7 @@
                                                                               <Image url="@../Imagenes/img10.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0">
+                                                                        <Button fx:id="FXFavoritos10" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -397,7 +397,7 @@
                                                                               <Image url="@../Imagenes/Img11.jpeg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos11" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -425,7 +425,7 @@
                                                                               <Image url="@../Imagenes/img12.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos12" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -457,7 +457,7 @@
                                                                               <Image url="@../Imagenes/img13.jpeg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos13" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -495,7 +495,7 @@
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
                                                                         </Button>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos14" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -523,7 +523,7 @@
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
                                                                         </Button>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos15" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -541,7 +541,7 @@
                                                                               <Image url="@../Imagenes/img16.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0">
+                                                                        <Button fx:id="FXFavoritos16" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -569,7 +569,7 @@
                                                                               <Image url="@../Imagenes/img17.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos17" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -597,7 +597,7 @@
                                                                               <Image url="@../Imagenes/img18.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos18" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -629,7 +629,7 @@
                                                                               <Image url="@../Imagenes/img19.jpeg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos19" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -667,7 +667,7 @@
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
                                                                         </Button>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos20" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -695,7 +695,7 @@
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
                                                                         </Button>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos21" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -713,7 +713,7 @@
                                                                               <Image url="@../Imagenes/img22.png" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0">
+                                                                        <Button fx:id="FXFavoritos22" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -741,7 +741,7 @@
                                                                               <Image url="@../Imagenes/img23.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="310.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos23" contentDisplay="GRAPHIC_ONLY" layoutX="310.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -769,7 +769,7 @@
                                                                               <Image url="@../Imagenes/img24.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos24" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -801,7 +801,7 @@
                                                                               <Image url="@../Imagenes/img25.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos25" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -839,7 +839,7 @@
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
                                                                         </Button>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos26" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -867,7 +867,7 @@
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
                                                                         </Button>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos27" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -885,7 +885,7 @@
                                                                               <Image url="@../Imagenes/img28.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0">
+                                                                        <Button fx:id="FXFavoritos28" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -913,7 +913,7 @@
                                                                               <Image url="@../Imagenes/img29.jpeg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos29" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -941,7 +941,7 @@
                                                                               <Image url="@../Imagenes/img30.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos30" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -988,7 +988,7 @@
                                               <TableColumn fx:id="FXNombre_P" prefWidth="236.0" text="Nombre del producto" />
                                                 <TableColumn fx:id="FXTipoP" prefWidth="236.0" text="Tipo de producto" />
                                                 <TableColumn fx:id="FXPrecio" prefWidth="236.0" text="Precio del producto" />
-                                                <TableColumn fx:id="Fxop_Eliminar" prefWidth="236.0" text="Opciones" />
+                                                <TableColumn fx:id="FXop_Eliminar" prefWidth="236.0" text="Opciones" />
                                             </columns>
                                           </TableView>
                                           <Label layoutX="28.0" layoutY="590.0" text="Cantidad de productos :" AnchorPane.bottomAnchor="8.400000000000023" AnchorPane.leftAnchor="28.0">
@@ -1037,12 +1037,12 @@
                                           </ImageView>
                                           <TableView fx:id="Favorito" layoutX="20.0" layoutY="75.0" onSort="#agregarAlCarrito" prefHeight="500.0" prefWidth="1180.0" AnchorPane.bottomAnchor="44.799999999999955" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="75.0">
                                              <columns>
-                                                <TableColumn fx:id="FXidpro" prefWidth="200.0" text="Producto" />
-                                                <TableColumn fx:id="FXNombre_P" prefWidth="200.0" text="Nombre del producto" />
-                                                <TableColumn fx:id="FXTipoP" prefWidth="200.0" text="Tipo de producto" />
-                                                <TableColumn fx:id="FXPrecio" prefWidth="200.0" text="Precio del producto" />
-                                                <TableColumn fx:id="FXop_Eliminar" prefWidth="200.0" text="Opciones" />
-                                                <TableColumn fx:id="FXop_Comprar" prefWidth="180.0" text="Opciones" />
+                                                <TableColumn fx:id="FXidpro" onEditStart="#agregarAlCarrito" prefWidth="200.0" text="Producto" />
+                                                <TableColumn fx:id="FXNombre_P" onEditStart="#agregarAlCarrito" prefWidth="200.0" text="Nombre del producto" />
+                                                <TableColumn fx:id="FXTipoP" onEditStart="#agregarAlCarrito" prefWidth="200.0" text="Tipo de producto" />
+                                                <TableColumn fx:id="FXPrecio" onEditStart="#agregarAlCarrito" prefWidth="200.0" text="Precio del producto" />
+                                                <TableColumn fx:id="FXop_Eliminar" onEditStart="#agregarAlCarrito" prefWidth="200.0" text="Opciones" />
+                                                <TableColumn fx:id="FXop_Comprar" onEditStart="#agregarAlCarrito" prefWidth="180.0" text="Opciones" />
                                              </columns>
                                           </TableView>
                                           <Label layoutX="20.0" layoutY="14.0" text="FAVORITOS" textFill="RED" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="14.0">

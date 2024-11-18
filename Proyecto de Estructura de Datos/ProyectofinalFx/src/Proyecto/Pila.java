@@ -9,7 +9,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javax.swing.JOptionPane;
-import javax.swing.table.DefaultTableModel;
 
 public class Pila {
     Nodo2<Producto> tope;
@@ -59,7 +58,7 @@ public class Pila {
             }
             else{
                 Pro=new Producto(Id_P, Nombre_P, Tipo_P, Precio_P);    
-                
+               
                 return Pro;
             }
         }catch(Exception e){
@@ -81,21 +80,21 @@ public class Pila {
         }
     }
     
-    public void setPush(){
-        Producto Pro=getCrearProducto("","","",00);
-        if(Pro!=null){
-            Nodo2<Producto> info=new Nodo2(Pro);
-            if(tope==null){
-                tope=info;
-                tope.sig=tope;
-            }else{
-                Nodo2<Producto> base=getBase();
-                info.sig=tope;
-                tope=info;
-                base.sig=tope;
-            }
+    public void setPush(String Id_P, String Nombre_P, String Tipo_P, int Precio_P) {
+    Producto Pro = getCrearProducto(Id_P, Nombre_P, Tipo_P, Precio_P);
+    if (Pro != null) {
+        Nodo2<Producto> info = new Nodo2(Pro);
+        if (tope == null) {
+            tope = info;
+            tope.sig = tope;
+        } else {
+            Nodo2<Producto> base = getBase();
+            info.sig = tope;
+            tope = info;
+            base.sig = tope;
         }
     }
+}
     
     public void setPop(){
         if(getEsPilaVacia())
@@ -117,8 +116,6 @@ public class Pila {
         }
     }
     
-    private List<Producto> productosList = new ArrayList<>();
-
    public void setRegistrarFilaTable(TableView<Producto> table) {
     ObservableList<Producto> productosList = FXCollections.observableArrayList();
 
@@ -132,67 +129,65 @@ public class Pila {
             nodo = nodo.sig;  // Avanzamos al siguiente nodo
         } while (nodo != tope);  // Detenemos cuando volvemos al tope
     }
+    for (Producto p : productosList) {
+        System.out.println("Producto en la lista: " + p.toString());
+    }
 
     // Asignar los productos a la tabla
     table.setItems(productosList);  // Esto actualiza la tabla con los productos
 
-    // Asegúrate de definir las columnas en otro lugar (por ejemplo, en la configuración inicial de la tabla)
-    // Si no las has definido, debes hacerlo ahora.
-
-    // Definir las columnas si no están definidas (si las columnas ya existen, puedes omitir esto)
-    TableColumn<Producto, String> colId = new TableColumn<>("Producto");
-    colId.setCellValueFactory(new PropertyValueFactory<>("Id_P"));
-
-    TableColumn<Producto, String> colNombre = new TableColumn<>("Nombre");
-    colNombre.setCellValueFactory(new PropertyValueFactory<>("Nombre_P"));
-
-    TableColumn<Producto, String> colTipo = new TableColumn<>("Tipo");
-    colTipo.setCellValueFactory(new PropertyValueFactory<>("Tipo_P"));
-
-    TableColumn<Producto, String> colPrecio = new TableColumn<>("Precio");
-    colPrecio.setCellValueFactory(new PropertyValueFactory<>("Precio_P"));
-
-    // Si las columnas no se han agregado aún, puedes agregarlas aquí
+    // Si las columnas no están definidas, añádelas aquí
     if (table.getColumns().isEmpty()) {
-        table.getColumns().addAll(colId, colNombre, colTipo, colPrecio);
+        TableColumn<Producto, String> FXidpro = new TableColumn<>("Producto");
+        FXidpro.setCellValueFactory(new PropertyValueFactory<>("Id_P"));
+
+        TableColumn<Producto, String> FXNombre_P = new TableColumn<>("Nombre");
+        FXNombre_P.setCellValueFactory(new PropertyValueFactory<>("Nombre_P"));
+
+        TableColumn<Producto, String> FXTipoP = new TableColumn<>("Tipo");
+        FXTipoP.setCellValueFactory(new PropertyValueFactory<>("Tipo_P"));
+
+        TableColumn<Producto, Integer> FXPrecio = new TableColumn<>("Precio");
+        FXPrecio.setCellValueFactory(new PropertyValueFactory<>("Precio_P"));
+
+        if (table.getColumns().isEmpty()) {
+            table.getColumns().addAll(FXidpro, FXNombre_P, FXTipoP, FXPrecio);
+        }
     }
 }
      
      public void setllenarTable(TableView<Producto> tab) {
-        // Crear la lista observable de usuarios
-        ObservableList<Producto> productosList = FXCollections.observableArrayList();
-        
-        // Recorrer la lista y agregar los usuarios
-        if (!getEsPilaVacia()) {
+    ObservableList<Producto> productosList = FXCollections.observableArrayList();
+
+    // Recorrer la pila y agregar los productos
+    if (!getEsPilaVacia()) {
         Nodo2<Producto> nodo = tope;
         do {
-            productosList.add(nodo.dato);  // Agregamos el producto a la lista observable
-            nodo = nodo.sig;  // Avanzamos al siguiente nodo
-        } while (nodo != tope);  // Detenemos cuando volvemos al tope
+            productosList.add(nodo.dato);  // Agregar el producto a la lista observable
+            nodo = nodo.sig;  // Avanzar al siguiente nodo
+        } while (nodo != tope);  // Detener cuando volvemos al tope
     }
+    // Establecer los productos en la tabla
+    tab.setItems(productosList);
 
+    // Definir las columnas y asignarles la propiedad correspondiente (si no se definieron antes)
+    TableColumn<Producto, String> FXidpro = new TableColumn<>("Producto");
+    FXidpro.setCellValueFactory(new PropertyValueFactory<>("Id_P"));
 
-        // Establecer los elementos en la tabla
-        tab.setItems(productosList);
+    TableColumn<Producto, String> FXNombre_P = new TableColumn<>("Nombre");
+    FXNombre_P.setCellValueFactory(new PropertyValueFactory<>("Nombre_P"));
 
-        // Definir las columnas y asignarles la propiedad correspondiente
-        TableColumn<Producto, String> colId = new TableColumn<>("Producto");
-        colId.setCellValueFactory(new PropertyValueFactory<>("Id_P"));
-        
-        TableColumn<Producto, String> colNombre = new TableColumn<>("Nombre del producto");
-        colNombre.setCellValueFactory(new PropertyValueFactory<>("Nombre_P"));
-        
-        TableColumn<Producto, String> colTipo = new TableColumn<>("Tipo");
-        colTipo.setCellValueFactory(new PropertyValueFactory<>("Tipo_P"));
-        
-        TableColumn<Producto, String> colPrecio = new TableColumn<>("Precio del producto");
-        colPrecio.setCellValueFactory(new PropertyValueFactory<>("Precio_P"));
-        
-        
-        
-        // Agregar las columnas a la tabla
-        tab.getColumns().addAll(colId, colNombre, colTipo, colPrecio);
+    TableColumn<Producto, String> FXTipoP = new TableColumn<>("Tipo");
+    FXTipoP.setCellValueFactory(new PropertyValueFactory<>("Tipo_P"));
+
+    TableColumn<Producto, Integer> FXPrecio = new TableColumn<>("Precio");
+    FXPrecio.setCellValueFactory(new PropertyValueFactory<>("Precio_P"));
+
+    // Agregar las columnas si no están ya presentes
+    if (tab.getColumns().isEmpty()) {
+        tab.getColumns().addAll(FXidpro, FXNombre_P, FXTipoP, FXPrecio);
     }
+}
     
     public void getSumaPro(){
         float cant, sum=0;
