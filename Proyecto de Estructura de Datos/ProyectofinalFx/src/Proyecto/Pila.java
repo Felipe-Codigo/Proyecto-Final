@@ -1,8 +1,6 @@
 
 package Proyecto;
 
-import java.util.ArrayList;
-import java.util.List;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.TableColumn;
@@ -52,6 +50,7 @@ public class Pila {
         try{
             buscar=getBuscarId_P(Id_P);
             if(buscar!=null){
+                
                 JOptionPane.showMessageDialog(null, 
                     "El Producto ya existe, intente nuevamente!");
                 return null;
@@ -119,25 +118,32 @@ public class Pila {
    public void setRegistrarFilaTable(TableView<Producto> table) {
     ObservableList<Producto> productosList = FXCollections.observableArrayList();
 
-    // Verifica si la pila no está vacía
+    // Verificar si la pila no está vacía
     if (!getEsPilaVacia()) {
         Nodo2<Producto> nodo = tope;  // Empezamos desde el tope de la pila
 
-        // Recorremos la pila circular y agregamos los productos a la lista observable
+        // Recorremos la pila y agregamos los productos a la lista observable
         do {
             productosList.add(nodo.dato);  // Agregar producto a la lista observable
             nodo = nodo.sig;  // Avanzamos al siguiente nodo
         } while (nodo != tope);  // Detenemos cuando volvemos al tope
-    }
-    for (Producto p : productosList) {
-        System.out.println("Producto en la lista: " + p.toString());
+
+        // Debugging: Verifica los productos añadidos
+        System.out.println("Productos en la lista observable:");
+        for (Producto p : productosList) {
+            System.out.println(p.toString());
+        }
     }
 
-    // Asignar los productos a la tabla
+    // Asegúrate de que la tabla esté vacía antes de agregar los nuevos productos
+      // Limpiar cualquier dato anterior en la tabla
+
+    // Establecer los productos en la tabla
     table.setItems(productosList);  // Esto actualiza la tabla con los productos
 
-    // Si las columnas no están definidas, añádelas aquí
+    // Verificar si las columnas están definidas correctamente
     if (table.getColumns().isEmpty()) {
+        // Solo agregar columnas si no están definidas aún
         TableColumn<Producto, String> FXidpro = new TableColumn<>("Producto");
         FXidpro.setCellValueFactory(new PropertyValueFactory<>("Id_P"));
 
@@ -150,10 +156,12 @@ public class Pila {
         TableColumn<Producto, Integer> FXPrecio = new TableColumn<>("Precio");
         FXPrecio.setCellValueFactory(new PropertyValueFactory<>("Precio_P"));
 
-        if (table.getColumns().isEmpty()) {
-            table.getColumns().addAll(FXidpro, FXNombre_P, FXTipoP, FXPrecio);
-        }
+        // Añadir las columnas a la tabla si no están definidas
+        table.getColumns().addAll(FXidpro, FXNombre_P, FXTipoP, FXPrecio);
     }
+
+    // Verifica si los productos están siendo correctamente añadidos a la tabla
+    System.out.println("La tabla debería estar actualizada ahora.");
 }
      
      public void setllenarTable(TableView<Producto> tab) {

@@ -41,13 +41,13 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="FXNombre_C" layoutX="44.0" layoutY="120.0" minHeight="40.0" minWidth="332.0" />
+            <TextField fx:id="FXCorreo_E" layoutX="44.0" layoutY="120.0" minHeight="40.0" minWidth="332.0" />
             <Label layoutX="44.0" layoutY="190.0" text="Correo Electronico">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="FXCorreo_E" layoutX="44.0" layoutY="220.0" minHeight="40.0" minWidth="332.0" />
+            <TextField fx:id="FXNombre_C" layoutX="44.0" layoutY="220.0" minHeight="40.0" minWidth="332.0" />
             <Label layoutX="44.0" layoutY="290.0" text="Contraseña">
                <font>
                   <Font size="14.0" />

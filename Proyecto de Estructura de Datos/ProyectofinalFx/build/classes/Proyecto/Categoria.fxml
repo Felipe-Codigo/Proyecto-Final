@@ -1037,12 +1037,12 @@
                                           </ImageView>
                                           <TableView fx:id="Favorito" layoutX="20.0" layoutY="75.0" onSort="#agregarAlCarrito" prefHeight="500.0" prefWidth="1180.0" AnchorPane.bottomAnchor="44.799999999999955" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="75.0">
                                              <columns>
-                                                <TableColumn fx:id="FXidpro" onEditStart="#agregarAlCarrito" prefWidth="200.0" text="Producto" />
-                                                <TableColumn fx:id="FXNombre_P" onEditStart="#agregarAlCarrito" prefWidth="200.0" text="Nombre del producto" />
-                                                <TableColumn fx:id="FXTipoP" onEditStart="#agregarAlCarrito" prefWidth="200.0" text="Tipo de producto" />
-                                                <TableColumn fx:id="FXPrecio" onEditStart="#agregarAlCarrito" prefWidth="200.0" text="Precio del producto" />
-                                                <TableColumn fx:id="FXop_Eliminar" onEditStart="#agregarAlCarrito" prefWidth="200.0" text="Opciones" />
-                                                <TableColumn fx:id="FXop_Comprar" onEditStart="#agregarAlCarrito" prefWidth="180.0" text="Opciones" />
+                                                <TableColumn fx:id="FXidpro" editable="false" prefWidth="200.0" text="Producto" />
+                                                <TableColumn fx:id="FXNombre_P" editable="false" prefWidth="200.0" text="Nombre del producto" />
+                                                <TableColumn fx:id="FXTipoP" editable="false" prefWidth="200.0" text="Tipo de producto" />
+                                                <TableColumn fx:id="FXPrecio" editable="false" prefWidth="200.0" text="Precio del producto" />
+                                                <TableColumn fx:id="FXop_Eliminar" prefWidth="200.0" text="Opciones" />
+                                                <TableColumn fx:id="FXop_Comprar" prefWidth="180.0" text="Opciones" />
                                              </columns>
                                           </TableView>
                                           <Label layoutX="20.0" layoutY="14.0" text="FAVORITOS" textFill="RED" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="14.0">
@@ -1050,7 +1050,7 @@
                                                 <Font name="Segoe UI" size="24.0" />
                                              </font>
                                           </Label>
-                                          <TextField editable="false" layoutX="230.0" layoutY="587.0" AnchorPane.bottomAnchor="7.399999999999999" AnchorPane.leftAnchor="230.0" />
+                                          <TextField fx:id="FXcantidad" editable="false" layoutX="230.0" layoutY="587.0" onAction="#Cantidad" AnchorPane.bottomAnchor="7.399999999999999" AnchorPane.leftAnchor="230.0" />
                                           <Label text="Cantidad de productos :" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="20.0">
                                              <font>
                                                 <Font name="Segoe UI Bold" size="18.0" />

@@ -16,10 +16,11 @@ import javax.swing.JOptionPane;
 
 
 public class LoginController implements Initializable {
-    Lista Usuario;
+    
+    private Lista Usuario;
 
     @FXML
-    private TextField FXCorreoE;
+    private TextField FXCorreo_E;
     
     @FXML
     private PasswordField FXContrasena;
@@ -30,6 +31,12 @@ public class LoginController implements Initializable {
     @FXML
     private Button B_CrearC;
     
+    // Constructor para inicializar la lista de usuarios
+    public LoginController() {
+        // Inicializar la lista de usuarios en el constructor
+        this.Usuario = new Lista();
+    }
+    
     @FXML
     public void eventButtonCrearC (ActionEvent event){
         cambiarVentana (event, "Crear_Cuenta.fxml");
@@ -37,8 +44,27 @@ public class LoginController implements Initializable {
     }
     @FXML
     public void eventButtonEntrar (ActionEvent event){
+        // Obtener los datos ingresados por el usuario
+        String correo = FXCorreo_E.getText();
+        String contrasena = FXContrasena.getText();
+
+        // Validar que los campos no estén vacíos
+        if (correo.isEmpty() || contrasena.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Por favor ingrese ambos campos.");
+            return; // No continuar si falta algún campo
+        }
+
+        // Cargar el usuario desde su archivo
+        Usuario usuario = Usuario.cargarUsuariosDesdeArchivo(correo);
+
+        // Verificar si el usuario existe y si la contraseña es correcta
+        if (usuario != null && usuario.getContraseña().equals(contrasena)) {
+        // Si las credenciales son correctas, cambiar a la ventana de categorías
         cambiarVentana(event, "Categoria.fxml");
-        
+        } else {
+        // Si el usuario no existe o la contraseña es incorrecta, mostrar un error
+        JOptionPane.showMessageDialog(null, "Correo electrónico o contraseña incorrectos.");
+       }
     }
   
     public void cambiarVentana(ActionEvent event, String fxmlFile) {

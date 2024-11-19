@@ -1,15 +1,15 @@
 package Proyecto;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
-import javafx.collections.FXCollections;
-import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javax.swing.JOptionPane;
-import javafx.scene.control.TableColumn;
-import javafx.collections.ObservableList;
-import javafx.scene.control.cell.PropertyValueFactory;
-import javax.swing.table.DefaultTableModel;
+
 
 public class Lista {
      Nodo1<Usuario> cab;
@@ -149,47 +149,54 @@ public class Lista {
                 "Nodo con Correo electronico "+Correo_e+" eliminado!");
         }
     }
-     // Usar un ArrayList para almacenar los datos de Usuario
-     private List<Usuario> usuariosList = new ArrayList<>();
-
-     public void setRegistrarFilaTable(DefaultTableModel miModelo, int pFila, Nodo1<Usuario> p){
-     // Registra el usuario en el ArrayList
-     usuariosList.add(p.dato);  // Aquí puedes agregar el dato a una lista interna si deseas trabajar con los datos
-    
-     // Si deseas seguir utilizando DefaultTableModel en lugar de ObservableList:
-     miModelo.setValueAt(p.dato.Nombre_C, pFila, 0);
-     miModelo.setValueAt(p.dato.Correo_E, pFila, 1);
-     miModelo.setValueAt(p.dato.Contraseña, pFila, 2); 
-     }
-     
-     public void setllenarTable(TableView<Usuario> tab) {
-        // Crear la lista observable de usuarios
-        ObservableList<Usuario> usuariosList = FXCollections.observableArrayList();
-        
-        // Recorrer la lista y agregar los usuarios
-        Nodo1<Usuario> nodo = cab;
-        while (nodo != null) {
-            usuariosList.add(nodo.dato);
-            nodo = nodo.sig;
+     // Método 1: Obtener todos los usuarios como un ArrayList
+    public List<Usuario> getUsuariosArrayList() {
+        List<Usuario> usuarios = new ArrayList<>();
+        Nodo1<Usuario> p = cab;
+        while (p != null) {
+            usuarios.add(p.dato);
+            p = p.sig;
         }
-
-        // Establecer los elementos en la tabla
-        tab.setItems(usuariosList);
-
-        // Definir las columnas y asignarles la propiedad correspondiente
-        TableColumn<Usuario, String> colNombre = new TableColumn<>("Nombre Completo");
-        colNombre.setCellValueFactory(new PropertyValueFactory<>("Nombre_C"));
-        
-        TableColumn<Usuario, String> colCorreo = new TableColumn<>("Correo Electrónico");
-        colCorreo.setCellValueFactory(new PropertyValueFactory<>("Correo_E"));
-        
-        TableColumn<Usuario, String> colContraseña = new TableColumn<>("Contraseña");
-        colContraseña.setCellValueFactory(new PropertyValueFactory<>("Contraseña"));
-        
-        // Agregar las columnas a la tabla
-        tab.getColumns().addAll(colNombre, colCorreo, colContraseña);
+        return usuarios;
     }
     
     
-}
 
+    // Método 2: Guardar los usuarios en un archivo de texto
+    public void guardarUsuariosEnArchivo() {
+        List<Usuario> usuarios = getUsuariosArrayList();
+
+    // Recorremos todos los usuarios y creamos un archivo para cada uno
+    for (Usuario usuario : usuarios) {
+        String correo = usuario.getCorreo_E();
+
+        String nombreArchivo = correo+".txt";
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(nombreArchivo))) {
+            // Guardamos los datos del usuario en su propio archivo
+            writer.write(usuario.getCorreo_E() + "," + usuario.getNombre_C() + "," + usuario.getContraseña());
+            writer.newLine();  // Añadimos un salto de línea para separar la información
+
+            JOptionPane.showMessageDialog(null, "Usuario " + correo + " guardado correctamente en el archivo " + nombreArchivo);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Error al guardar el usuario " + correo + " en el archivo: " + e.getMessage());
+        }
+     }
+    }
+    
+      public Usuario cargarUsuariosDesdeArchivo(String correo) {
+      String nombreArchivo = correo+ ".txt"; // Creamos el nombre del archivo basado en el correo.
+      try (BufferedReader reader = new BufferedReader(new FileReader(nombreArchivo))) {
+        String linea;
+        while ((linea = reader.readLine()) != null) {
+            String[] datos = linea.split(",");
+            if (datos.length == 3) {
+                // Si encontramos un usuario, lo devolvemos.
+                return new Usuario(datos[0], datos[1], datos[2]); // Se asume que el archivo contiene correo, nombre y contraseña
+            }
+        }
+      } catch (Exception e) {
+        JOptionPane.showMessageDialog(null, "Error al cargar usuario desde el archivo: " + e.getMessage());
+      }
+      return null; // Si no se encuentra el usuario, devolvemos null.
+    }
+}

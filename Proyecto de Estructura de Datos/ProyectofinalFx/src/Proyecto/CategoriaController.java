@@ -7,9 +7,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.SortEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javax.swing.JOptionPane;
 
@@ -113,6 +113,9 @@ public class CategoriaController implements Initializable {
     @FXML
     private Button FXFavoritos25, FXFavoritos26, FXFavoritos27, FXFavoritos28, FXFavoritos29, FXFavoritos30;
     
+    @FXML
+    private TextField FXcantidad;
+    
     
     
     private void inicializarProductos() {
@@ -172,8 +175,7 @@ public class CategoriaController implements Initializable {
 
         // Puedes usar un switch o if-else para determinar qué producto corresponde a cada botón
         if (botonPresionado == FXComprar1) {
-            Id_P = "001"; // El ID del producto correspondiente
-            
+            Id_P = "001"; // El ID del producto correspondiente  
         } else if (botonPresionado == FXComprar2) {
             Id_P = "002";
         } else if (botonPresionado == FXComprar3) {
@@ -256,6 +258,10 @@ public class CategoriaController implements Initializable {
     }
         
     }
+    @FXML
+    public void Cantidad(ActionEvent event){
+        Producto.getSumaPro();
+    }
    
     /**
      *
@@ -310,12 +316,8 @@ public class CategoriaController implements Initializable {
         Producto = new Pila();
         inicializarProductos(); // Llama para agregar los productos a la pila
     }
-     Producto.setRegistrarFilaTable(Favorito);
-     Producto.setllenarTable(Favorito);
+     
         
-    }   
-
-
-    
-    
+    }      
 }
+

@@ -3,7 +3,6 @@ package Proyecto;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -21,7 +20,8 @@ import javax.swing.JOptionPane;
  * @author FELIPE QUINTERO
  */
 public class Crear_CuentaController implements Initializable {
-   Lista Usuario;
+    
+   private Lista Usuario;
 
     @FXML
     private TextField FXNombre_C;
@@ -38,7 +38,10 @@ public class Crear_CuentaController implements Initializable {
     @FXML
     private Button B_GuardarC;
    
-    
+    // Constructor para inicializar la lista de usuarios
+    public Crear_CuentaController() {
+        this.Usuario = new Lista();  // Crear una nueva instancia de Lista
+    }
      
     @FXML
     public void eventButtonInicioS (ActionEvent event){
@@ -46,15 +49,21 @@ public class Crear_CuentaController implements Initializable {
     }
     @FXML
    public void eventButtonGuardarC(ActionEvent event) {
-        // Crear un nuevo usuario con los datos del formulario
-        Usuario nuevoUsuario = new Usuario(
-            FXNombre_C.getText(),
-            FXCorreo_E.getText(),
-            FXContraseña.getText()
-        );
-        Usuario.getCrearUsuario(FXNombre_C, FXCorreo_E, FXContraseña);
-        Usuario.setAddNodoF(FXNombre_C, FXCorreo_E, FXContraseña);
-      
+        Usuario nuevoUsuario = Usuario.getCrearUsuario(FXNombre_C, FXCorreo_E, FXContraseña);
+        
+        // Si el usuario no es nulo (es decir, no hubo errores en la creación)
+        if (nuevoUsuario != null) {
+            // Añadir el usuario a la lista de usuarios
+            Usuario.setAddNodoF(FXNombre_C, FXCorreo_E, FXContraseña);
+            // También podrías guardar los usuarios en un archivo si lo deseas
+            Usuario.guardarUsuariosEnArchivo();
+            
+            JOptionPane.showMessageDialog(null, "Cuenta creada con éxito.");
+            
+        } else {
+            // Si el usuario es nulo, significa que hubo un error al crear la cuenta
+            JOptionPane.showMessageDialog(null, "No se pudo crear la cuenta. Intente nuevamente.");
+        }
     }
     
     public void cambiarVentana(ActionEvent event, String fxmlFile) {
