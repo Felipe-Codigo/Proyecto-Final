@@ -10,33 +10,17 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author FELIPE QUINTERO
- */
 public class CategoriaController implements Initializable {
     Pila Producto;
-    
+    Lista Usuario;
     Cola producto;
     
-
     @FXML
-    private Button B_Categoria1;
-    
-    @FXML
-    private Button B_Categoria2;
-    
-    @FXML
-    private Button B_Categoria3;
-    
-    @FXML
-    private Button B_Categoria4;
-    
-    @FXML
-    private Button B_Categoria5;
+    private Button B_Categoria1, B_Categoria2, B_Categoria3, B_Categoria4, B_Categoria5;
     
     @FXML
     private Button FXComprar1, FXComprar2, FXComprar3, FXComprar4, FXComprar5, FXComprar6;
@@ -54,37 +38,13 @@ public class CategoriaController implements Initializable {
     private Button FXComprar25, FXComprar26, FXComprar27, FXComprar28, FXComprar29, FXComprar30;
     
     @FXML
-    private AnchorPane From_Categoria1;
+    private AnchorPane From_Categoria1, From_Categoria2, From_Categoria3, From_Categoria4, From_Categoria5;
     
     @FXML
-    private AnchorPane From_Categoria2;
+    private TableView<Producto> Carrito_compra, Favorito, Historial;
     
     @FXML
-    private AnchorPane From_Categoria3;
-    
-    @FXML
-    private AnchorPane From_Categoria4;
-    
-    @FXML
-    private AnchorPane From_Categoria5;
-    
-    @FXML
-    private TableView<Producto> Carrito_compra;
-    
-    @FXML
-    private TableView<Producto> Favorito;
-    
-    @FXML
-    private TableView<Producto> Historial;
-    
-    @FXML
-    private TableColumn<Producto, String> FXidpro;
-    
-    @FXML
-    private TableColumn<Producto, String> FXNombre_P;
-    
-    @FXML
-    private TableColumn<Producto, String> FXTipoP;
+    private TableColumn<Producto, String> FXidpro, FXNombre_P, FXTipoP, FXFecha;
     
     @FXML
     private TableColumn<Producto, Integer> FXPrecio;
@@ -94,9 +54,6 @@ public class CategoriaController implements Initializable {
     
     @FXML
     private TableColumn<?, ?> FXop_Comprar;
-    
-    @FXML
-    private TableColumn<?, ?> FXFecha;
     
     @FXML
     private Button FXFavoritos1, FXFavoritos2, FXFavoritos3, FXFavoritos4, FXFavoritos5, FXFavoritos6;
@@ -114,16 +71,11 @@ public class CategoriaController implements Initializable {
     private Button FXFavoritos25, FXFavoritos26, FXFavoritos27, FXFavoritos28, FXFavoritos29, FXFavoritos30;
     
     @FXML
-    private TextField FXcantidad;
-    
+    private TextField FXcantidad, FXNombre_C, FXCorreo_E, FXContrasena;
     
     
     private void inicializarProductos() {
-        if (Producto == null) {
-        Producto = new Pila();  // Aseguramos que Producto sea una instancia de Pila
-    }
-    
-    // Agregamos los productos a la pila
+     
     Producto.setPush("001", "Tenis adidas 4DFWD Pulse negro", "Zapato", 850000);
     Producto.setPush("002", "Tenis adidas Forum Mid", "Zapato", 460000);
     Producto.setPush("003", "Tenis adidas Supernova+", "Zapato", 640000);
@@ -154,94 +106,216 @@ public class CategoriaController implements Initializable {
     Producto.setPush("028", "Notebook Lenovo Legion Slim 7 15ach6 - 82k80083us", "Portatil", 7600000);
     Producto.setPush("029", "Macbook Pro 15 Touchbar2018 Mod A1990", "Portatil", 2800000);
     Producto.setPush("030", "Portátil SAMSUNG Galaxy Book 2 Pro", "Portatil", 2170000);
+    
+    producto.setAddCola("001", "Tenis adidas 4DFWD Pulse negro", "Zapato", 850000);
+    producto.setAddCola("002", "Tenis adidas Forum Mid", "Zapato", 460000);
+    producto.setAddCola("003", "Tenis adidas Supernova+", "Zapato", 640000);
+    producto.setAddCola("004", "Tenis adidas 4DFWD Pulse blanco", "Zapato", 85000);
+    producto.setAddCola("005", "Tenis adidas Ultra 4D", "Zapato", 1050000);
+    producto.setAddCola("006", "Tenis adidas 4DFWD Pulse naranjado", "Zapato", 85000);
+    producto.setAddCola("007", "SHEIN EZwear Jeans", "Jeans", 128500);
+    producto.setAddCola("008", "Pantalon Cargo Trabajo", "Jeans", 80000);
+    producto.setAddCola("009", "Jean mujer tiro alto", "Jeans", 190000);
+    producto.setAddCola("010", "Vaqueros holgados para mujero", "Jeans", 170000);
+    producto.setAddCola("011", "Manfinity EMRG Jeans rasgados", "Jeans", 157000);
+    producto.setAddCola("012", "Jean Masculino Cargo", "Jeans", 90000);
+    producto.setAddCola("013", "Blusa corta de manga larga para mujer", "Camisa", 54000);
+    producto.setAddCola("014", "Camisa para mujer oversize", "Camisa", 120000);
+    producto.setAddCola("015", "Blusa elegante a rayas", "Camisa", 102000);
+    producto.setAddCola("016", "Camisa manga corta para hombre", "Camisa", 90000);
+    producto.setAddCola("017", "Camisas de Hombre de Vestir Informales", "Camisa", 107500);
+    producto.setAddCola("018", "Hombre camisa de lino", "Camisa", 100000);
+    producto.setAddCola("019", "Celular Motorola Moto G42", "Celular", 850000);
+    producto.setAddCola("020", "Celular Samsung Galaxy A55 5G", "Celular", 1450000);
+    producto.setAddCola("021", "Celular Iphone 14 Pro", "Celular", 6900000);
+    producto.setAddCola("022", "Celular Xiaomi Redmi A3", "Celular", 390000);
+    producto.setAddCola("023", "Samsung Galaxy Z Fold 4 5g", "Celular", 3950000);
+    producto.setAddCola("024", "Huawei Mate XT Ultimate Design", "Celular", 11880000);
+    producto.setAddCola("025", "Portatil Lenovo LOQ 15IAX9", "Portatil", 37900000);
+    producto.setAddCola("026", "HP Portátil A6HX4LA#ABM 14-DQ0533LA", "Portatil", 1300000);
+    producto.setAddCola("027", "Portátil Lenovo V14 G4 IAH", "Portatil", 1920000);
+    producto.setAddCola("028", "Notebook Lenovo Legion Slim 7 15ach6 - 82k80083us", "Portatil", 7600000);
+    producto.setAddCola("029", "Macbook Pro 15 Touchbar2018 Mod A1990", "Portatil", 2800000);
+    producto.setAddCola("030", "Portátil SAMSUNG Galaxy Book 2 Pro", "Portatil", 2170000);
 
  
+    }
+  
+    @FXML
+    private void Perfil(ActionEvent event) {
+       
     }
     
     @FXML
     private void agregarAlCarrito(ActionEvent event) {
+        if (Producto == null) {
+        JOptionPane.showMessageDialog(null, "Error: La pila de productos no está inicializada.");
+        
+        return;
+        }
+        Button botonPresionado = (Button) event.getSource();
+        String Id_P = "";
+        
+        if (botonPresionado == FXComprar1) {
+           Id_P = "001"; 
+        } else if (botonPresionado == FXComprar2) {
+           Id_P = "002";
+        } else if (botonPresionado == FXComprar3) {
+           Id_P = "003";
+        } else if (botonPresionado == FXComprar4) {
+           Id_P = "004";
+        } else if (botonPresionado == FXComprar5) {
+           Id_P = "005";
+        } else if (botonPresionado == FXComprar6) {
+           Id_P = "006";
+        } else if (botonPresionado == FXComprar7) {
+           Id_P = "007";
+        } else if (botonPresionado == FXComprar8) {
+           Id_P = "008";
+        } else if (botonPresionado == FXComprar9) {
+           Id_P = "009";
+        } else if (botonPresionado == FXComprar10) {
+           Id_P = "010";
+        } else if (botonPresionado == FXComprar11) {
+           Id_P = "011";
+        } else if (botonPresionado == FXComprar12) {
+           Id_P = "012";
+        } else if (botonPresionado == FXComprar13) {
+           Id_P = "013";
+        } else if (botonPresionado == FXComprar14) {
+           Id_P = "014";
+        } else if (botonPresionado == FXComprar15) {
+           Id_P = "015";
+        } else if (botonPresionado == FXComprar16) {
+           Id_P = "016";
+        } else if (botonPresionado == FXComprar17) {
+           Id_P = "017";
+        } else if (botonPresionado == FXComprar18) {
+           Id_P = "018";
+        } else if (botonPresionado == FXComprar19) {
+           Id_P = "019";
+        } else if (botonPresionado == FXComprar20) {
+           Id_P = "020";
+        } else if (botonPresionado == FXComprar21) {
+           Id_P = "021";
+        }else if (botonPresionado == FXComprar22) {
+           Id_P = "022";
+        } else if (botonPresionado == FXComprar23) {
+           Id_P = "023";
+        } else if (botonPresionado == FXComprar24) {
+           Id_P = "024";
+        } else if (botonPresionado == FXComprar25) {
+           Id_P = "025";
+        } else if (botonPresionado == FXComprar26) {
+           Id_P = "026";
+        } else if (botonPresionado == FXComprar27) {
+           Id_P = "027";
+        } else if (botonPresionado == FXComprar28) {
+           Id_P = "028";
+        } else if (botonPresionado == FXComprar29) {
+           Id_P = "029";
+        } else if (botonPresionado == FXComprar30) {
+           Id_P = "030";
+        }
+        
+        Nodo3<Producto> productoEncontrado = producto.getBuscarId_P(Id_P);
+    
+    if (productoEncontrado != null) {
+        
+        producto.llenarTablaCola(Carrito_compra);
+        JOptionPane.showMessageDialog(null, "Producto Encontrado y agregado.");
+    } else {
+        JOptionPane.showMessageDialog(null, "Producto no encontrado.");
+    }
+    
+    System.out.println("Producto buscado con ID: " + Id_P);
+    
+    if (productoEncontrado != null) {
+    System.out.println("Producto encontrado: " + productoEncontrado.dato.toString());
+   } else {
+    System.out.println("Producto no encontrado");
+    }
+        
+    }
+    
+    @FXML
+    private void agregarAFavoritos(ActionEvent event) {
         
         if (Producto == null) {
         JOptionPane.showMessageDialog(null, "Error: La pila de productos no está inicializada.");
-        return;  // Salir del método si la pila no está inicializada
-    }
+            return;
+        }
         
-        // Obtener el botón presionado
         Button botonPresionado = (Button) event.getSource();
-        
-
-        // Determinar qué producto se debe agregar en base al botón presionado
+       
         String Id_P = "";
-
-        // Puedes usar un switch o if-else para determinar qué producto corresponde a cada botón
-        if (botonPresionado == FXComprar1) {
-            Id_P = "001"; // El ID del producto correspondiente  
-        } else if (botonPresionado == FXComprar2) {
+        
+        if (botonPresionado == FXFavoritos1) {
+            Id_P = "001";   
+        } else if (botonPresionado == FXFavoritos2) {
             Id_P = "002";
-        } else if (botonPresionado == FXComprar3) {
+        } else if (botonPresionado == FXFavoritos3) {
             Id_P = "003";
-        }else if (botonPresionado == FXComprar4) {
+        }else if (botonPresionado == FXFavoritos4) {
             Id_P = "004";
-        } else if (botonPresionado == FXComprar5) {
+        } else if (botonPresionado == FXFavoritos5) {
             Id_P = "005";
-        }else if (botonPresionado == FXComprar6) {
+        }else if (botonPresionado == FXFavoritos6) {
             Id_P = "006";
-        } else if (botonPresionado == FXComprar7) {
+        } else if (botonPresionado == FXFavoritos7) {
             Id_P = "007";
-        }else if (botonPresionado == FXComprar8) {
+        }else if (botonPresionado == FXFavoritos8) {
             Id_P = "008";
-        } else if (botonPresionado == FXComprar9) {
+        } else if (botonPresionado == FXFavoritos9) {
             Id_P = "009";
-        }else if (botonPresionado == FXComprar10) {
+        }else if (botonPresionado == FXFavoritos10) {
             Id_P = "010";
-        } else if (botonPresionado == FXComprar11) {
+        } else if (botonPresionado == FXFavoritos11) {
             Id_P = "011";
-        }else if (botonPresionado == FXComprar12) {
+        }else if (botonPresionado == FXFavoritos12) {
             Id_P = "012";
-        } else if (botonPresionado == FXComprar13) {
+        } else if (botonPresionado == FXFavoritos13) {
             Id_P = "013";
-        }else if (botonPresionado == FXComprar14) {
+        }else if (botonPresionado == FXFavoritos14) {
             Id_P = "014";
-        } else if (botonPresionado == FXComprar15) {
+        } else if (botonPresionado == FXFavoritos15) {
             Id_P = "015";
-        }else if (botonPresionado == FXComprar16) {
+        }else if (botonPresionado == FXFavoritos16) {
             Id_P = "016";
-        } else if (botonPresionado == FXComprar17) {
+        } else if (botonPresionado == FXFavoritos17) {
             Id_P = "017";
-        }else if (botonPresionado == FXComprar18) {
+        }else if (botonPresionado == FXFavoritos18) {
             Id_P = "018";
-        } else if (botonPresionado == FXComprar19) {
+        } else if (botonPresionado == FXFavoritos19) {
             Id_P = "019";
-        }else if (botonPresionado == FXComprar20) {
+        }else if (botonPresionado == FXFavoritos20) {
             Id_P = "020";
-        } else if (botonPresionado == FXComprar21) {
+        } else if (botonPresionado == FXFavoritos21) {
             Id_P = "021";
-        }else if (botonPresionado == FXComprar22) {
+        }else if (botonPresionado == FXFavoritos22) {
             Id_P = "022";
-        } else if (botonPresionado == FXComprar23) {
+        } else if (botonPresionado == FXFavoritos23) {
             Id_P = "023";
-        }else if (botonPresionado == FXComprar24) {
+        }else if (botonPresionado == FXFavoritos24) {
             Id_P = "024";
-        } else if (botonPresionado == FXComprar25) {
+        } else if (botonPresionado == FXFavoritos25) {
             Id_P = "025";
-        }else if (botonPresionado == FXComprar26) {
+        }else if (botonPresionado == FXFavoritos26) {
             Id_P = "026";
-        } else if (botonPresionado == FXComprar27) {
+        } else if (botonPresionado == FXFavoritos27) {
             Id_P = "027";
-        }else if (botonPresionado == FXComprar28) {
+        }else if (botonPresionado == FXFavoritos28) {
             Id_P = "028";
-        } else if (botonPresionado == FXComprar29) {
+        } else if (botonPresionado == FXFavoritos29) {
             Id_P = "029";
-        }else if (botonPresionado == FXComprar30) {
+        }else if (botonPresionado == FXFavoritos30) {
             Id_P = "030";
         } 
-        
-        
         
         Nodo2<Producto> productoEncontrado = Producto.getBuscarId_P(Id_P);
     
     if (productoEncontrado != null) {
-        // Si el producto fue encontrado, lo agregamos al carrito (o a Favorito)
+        // Si el producto fue encontrado, lo agregamos al Favorito
         Producto.setRegistrarFilaTable(Favorito);
         Producto.setllenarTable(Favorito);
         JOptionPane.showMessageDialog(null, "Producto Encontrado y agregado.");
@@ -262,11 +336,7 @@ public class CategoriaController implements Initializable {
     public void Cantidad(ActionEvent event){
         Producto.getSumaPro();
     }
-   
-    /**
-     *
-     * @param event
-     */
+    
     @FXML
     public void cambiarFrom(ActionEvent event){
        
@@ -310,14 +380,18 @@ public class CategoriaController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-     // Inicializamos la pila solo una vez, si aún no ha sido inicializada.
+        // TODO  
+    FXidpro.setCellValueFactory(new PropertyValueFactory<>("Id_P"));
+    FXNombre_P.setCellValueFactory(new PropertyValueFactory<>("Nombre_P"));
+    FXTipoP.setCellValueFactory(new PropertyValueFactory<>("Tipo_P"));
+    FXPrecio.setCellValueFactory(new PropertyValueFactory<>("Precio_P"));
+    
     if (Producto == null) {
         Producto = new Pila();
-        inicializarProductos(); // Llama para agregar los productos a la pila
-    }
-     
-        
+        producto = new Cola();
+        inicializarProductos();
+    }   
     }      
+   
 }
 

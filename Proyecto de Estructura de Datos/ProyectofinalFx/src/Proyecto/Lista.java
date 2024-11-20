@@ -2,7 +2,6 @@ package Proyecto;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
@@ -149,7 +148,7 @@ public class Lista {
                 "Nodo con Correo electronico "+Correo_e+" eliminado!");
         }
     }
-     // Método 1: Obtener todos los usuarios como un ArrayList
+     
     public List<Usuario> getUsuariosArrayList() {
         List<Usuario> usuarios = new ArrayList<>();
         Nodo1<Usuario> p = cab;
@@ -160,21 +159,17 @@ public class Lista {
         return usuarios;
     }
     
-    
-
-    // Método 2: Guardar los usuarios en un archivo de texto
     public void guardarUsuariosEnArchivo() {
         List<Usuario> usuarios = getUsuariosArrayList();
 
-    // Recorremos todos los usuarios y creamos un archivo para cada uno
     for (Usuario usuario : usuarios) {
         String correo = usuario.getCorreo_E();
 
         String nombreArchivo = correo+".txt";
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(nombreArchivo))) {
-            // Guardamos los datos del usuario en su propio archivo
+            
             writer.write(usuario.getCorreo_E() + "," + usuario.getNombre_C() + "," + usuario.getContraseña());
-            writer.newLine();  // Añadimos un salto de línea para separar la información
+            writer.newLine();  
 
             JOptionPane.showMessageDialog(null, "Usuario " + correo + " guardado correctamente en el archivo " + nombreArchivo);
         } catch (Exception e) {
@@ -184,19 +179,20 @@ public class Lista {
     }
     
       public Usuario cargarUsuariosDesdeArchivo(String correo) {
-      String nombreArchivo = correo+ ".txt"; // Creamos el nombre del archivo basado en el correo.
+      String nombreArchivo = correo+ ".txt"; 
       try (BufferedReader reader = new BufferedReader(new FileReader(nombreArchivo))) {
         String linea;
         while ((linea = reader.readLine()) != null) {
             String[] datos = linea.split(",");
             if (datos.length == 3) {
-                // Si encontramos un usuario, lo devolvemos.
-                return new Usuario(datos[0], datos[1], datos[2]); // Se asume que el archivo contiene correo, nombre y contraseña
+                
+                return new Usuario(datos[0], datos[1], datos[2]); 
             }
         }
       } catch (Exception e) {
         JOptionPane.showMessageDialog(null, "Error al cargar usuario desde el archivo: " + e.getMessage());
       }
-      return null; // Si no se encuentra el usuario, devolvemos null.
+      return null; 
     }
+      
 }
