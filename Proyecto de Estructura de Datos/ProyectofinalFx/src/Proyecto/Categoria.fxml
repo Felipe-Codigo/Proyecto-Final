@@ -113,7 +113,7 @@
                                                                               <Image url="@../Imagenes/img1.png" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXFavoritos1" contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos1" contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos1" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -122,7 +122,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button fx:id="FXComprar1" layoutX="300.0" layoutY="150.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar1" layoutX="300.0" layoutY="150.0" mnemonicParsing="false" onAction="#agregarAlCarrito1" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -146,12 +146,12 @@
                                                                               <Image url="@../Imagenes/img2.png" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXComprar2" layoutX="300.0" layoutY="150.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar2" layoutX="300.0" layoutY="150.0" mnemonicParsing="false" onAction="#agregarAlCarrito2" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
                                                                         </Button>
-                                                                        <Button fx:id="FXFavoritos2" contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos2" contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos2" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -174,12 +174,12 @@
                                                                               <Image url="@../Imagenes/img3.png" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXComprar3" layoutX="300.0" layoutY="150.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar3" layoutX="300.0" layoutY="150.0" mnemonicParsing="false" onAction="#agregarAlCarrito3" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
                                                                         </Button>
-                                                                        <Button fx:id="FXFavoritos3" contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos3" contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos3" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -197,7 +197,7 @@
                                                                               <Image url="@../Imagenes/img4.png" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXFavoritos4" contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos4" contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos4" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -206,7 +206,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button fx:id="FXComprar4" layoutX="300.0" layoutY="150.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar4" layoutX="300.0" layoutY="150.0" mnemonicParsing="false" onAction="#agregarAlCarrito4" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -225,7 +225,7 @@
                                                                               <Image url="@../Imagenes/img5.png" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXFavoritos5" contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos5" contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos5" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -234,7 +234,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button fx:id="FXComprar5" layoutX="300.0" layoutY="150.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar5" layoutX="300.0" layoutY="150.0" mnemonicParsing="false" onAction="#agregarAlCarrito5" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -253,7 +253,7 @@
                                                                               <Image url="@../Imagenes/img6.png" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXFavoritos6" contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos6" contentDisplay="GRAPHIC_ONLY" layoutX="315.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos6" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -262,7 +262,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button fx:id="FXComprar6" layoutX="300.0" layoutY="150.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar6" layoutX="300.0" layoutY="150.0" mnemonicParsing="false" onAction="#agregarAlCarrito6" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -285,7 +285,7 @@
                                                                               <Image url="@../Imagenes/img7.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXFavoritos7" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos7" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos7" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -294,7 +294,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button fx:id="FXComprar7" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar7" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito7" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -318,12 +318,12 @@
                                                                               <Image url="@../Imagenes/img8.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXComprar8" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar8" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito8" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
                                                                         </Button>
-                                                                        <Button fx:id="FXFavoritos8" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos8" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos8" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -346,12 +346,12 @@
                                                                               <Image url="@../Imagenes/img9.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXComprar9" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar9" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito9" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
                                                                         </Button>
-                                                                        <Button fx:id="FXFavoritos9" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos9" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos9" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -369,7 +369,7 @@
                                                                               <Image url="@../Imagenes/img10.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXFavoritos10" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0">
+                                                                        <Button fx:id="FXFavoritos10" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos10" prefHeight="50.0" prefWidth="50.0">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -378,7 +378,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button fx:id="FXComprar10" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar10" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito10" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -397,7 +397,7 @@
                                                                               <Image url="@../Imagenes/Img11.jpeg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXFavoritos11" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos11" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos11" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -406,7 +406,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button fx:id="FXComprar11" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar11" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito11" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -425,7 +425,7 @@
                                                                               <Image url="@../Imagenes/img12.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXFavoritos12" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos12" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos12" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -434,7 +434,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button fx:id="FXComprar12" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar12" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito12" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -457,7 +457,7 @@
                                                                               <Image url="@../Imagenes/img13.jpeg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXFavoritos13" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos13" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos13" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -466,7 +466,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button fx:id="FXComprar13" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar13" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito13" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -490,12 +490,12 @@
                                                                               <Image url="@../Imagenes/img14.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXComprar14" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar14" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito14" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
                                                                         </Button>
-                                                                        <Button fx:id="FXFavoritos14" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos14" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos14" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -518,12 +518,12 @@
                                                                               <Image url="@../Imagenes/img15.jpeg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXComprar15" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar15" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito15" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
                                                                         </Button>
-                                                                        <Button fx:id="FXFavoritos15" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos15" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos15" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -541,7 +541,7 @@
                                                                               <Image url="@../Imagenes/img16.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXFavoritos16" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0">
+                                                                        <Button fx:id="FXFavoritos16" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos16" prefHeight="50.0" prefWidth="50.0">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -550,7 +550,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button fx:id="FXComprar16" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar16" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito16" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -569,7 +569,7 @@
                                                                               <Image url="@../Imagenes/img17.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXFavoritos17" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos17" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos17" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -578,7 +578,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button fx:id="FXComprar17" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar17" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito17" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -597,7 +597,7 @@
                                                                               <Image url="@../Imagenes/img18.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXFavoritos18" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos18" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos18" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -606,7 +606,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button fx:id="FXComprar18" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar18" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito18" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -629,7 +629,7 @@
                                                                               <Image url="@../Imagenes/img19.jpeg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXFavoritos19" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos19" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos19" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -638,7 +638,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button fx:id="FXComprar19" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar19" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito19" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -662,12 +662,12 @@
                                                                               <Image url="@../Imagenes/img20.jpeg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXComprar20" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar20" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito20" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
                                                                         </Button>
-                                                                        <Button fx:id="FXFavoritos20" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos20" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos20" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -690,12 +690,12 @@
                                                                               <Image url="@../Imagenes/img21.jpeg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXComprar21" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar21" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito21" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
                                                                         </Button>
-                                                                        <Button fx:id="FXFavoritos21" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos21" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos21" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -713,7 +713,7 @@
                                                                               <Image url="@../Imagenes/img22.png" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXFavoritos22" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0">
+                                                                        <Button fx:id="FXFavoritos22" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos22" prefHeight="50.0" prefWidth="50.0">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -722,7 +722,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button fx:id="FXComprar22" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar22" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito22" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -741,7 +741,7 @@
                                                                               <Image url="@../Imagenes/img23.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXFavoritos23" contentDisplay="GRAPHIC_ONLY" layoutX="310.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos23" contentDisplay="GRAPHIC_ONLY" layoutX="310.0" layoutY="5.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos23" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -750,7 +750,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button fx:id="FXComprar23" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar23" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito23" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -769,7 +769,7 @@
                                                                               <Image url="@../Imagenes/img24.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXFavoritos24" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos24" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos24" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -778,7 +778,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button fx:id="FXComprar24" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar24" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito24" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -801,7 +801,7 @@
                                                                               <Image url="@../Imagenes/img25.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXFavoritos25" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos25" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos25" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -810,7 +810,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button fx:id="FXComprar25" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar25" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito25" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -834,12 +834,12 @@
                                                                               <Image url="@../Imagenes/img26.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXComprar26" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar26" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito26" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
                                                                         </Button>
-                                                                        <Button fx:id="FXFavoritos26" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos26" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos26" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -862,12 +862,12 @@
                                                                               <Image url="@../Imagenes/img27.jpeg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXComprar27" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar27" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito27" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
                                                                         </Button>
-                                                                        <Button fx:id="FXFavoritos27" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos27" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos27" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -885,7 +885,7 @@
                                                                               <Image url="@../Imagenes/img28.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXFavoritos28" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0">
+                                                                        <Button fx:id="FXFavoritos28" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos28" prefHeight="50.0" prefWidth="50.0">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -894,7 +894,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button fx:id="FXComprar28" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar28" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito28" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -913,7 +913,7 @@
                                                                               <Image url="@../Imagenes/img29.jpeg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXFavoritos29" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos29" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos29" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -922,7 +922,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button fx:id="FXComprar29" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar29" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito29" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -941,7 +941,7 @@
                                                                               <Image url="@../Imagenes/img30.jpg" />
                                                                            </image>
                                                                         </ImageView>
-                                                                        <Button fx:id="FXFavoritos30" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos" prefHeight="50.0" prefWidth="50.0" text="Button">
+                                                                        <Button fx:id="FXFavoritos30" contentDisplay="GRAPHIC_ONLY" layoutX="210.0" layoutY="180.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#agregarAFavoritos30" prefHeight="50.0" prefWidth="50.0" text="Button">
                                                                            <graphic>
                                                                               <ImageView fitHeight="51.0" fitWidth="51.0" pickOnBounds="true" smooth="false">
                                                                                  <image>
@@ -950,7 +950,7 @@
                                                                               </ImageView>
                                                                            </graphic>
                                                                         </Button>
-                                                                        <Button fx:id="FXComprar30" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito" prefHeight="58.0" prefWidth="76.0" text="Comprar">
+                                                                        <Button fx:id="FXComprar30" layoutX="300.0" layoutY="170.0" mnemonicParsing="false" onAction="#agregarAlCarrito30" prefHeight="58.0" prefWidth="76.0" text="Comprar">
                                                                            <font>
                                                                               <Font name="Century Gothic Bold" size="14.0" />
                                                                            </font>
@@ -982,7 +982,7 @@
                                  <children>
                                     <AnchorPane prefHeight="622.0" prefWidth="1220.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <children>
-                                          <TableView fx:id="Carrito_compra" layoutX="20.0" layoutY="75.0" onSort="#agregarAlCarrito" prefHeight="500.0" prefWidth="1180.0" AnchorPane.bottomAnchor="46.39999999999998" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="75.0">
+                                          <TableView fx:id="Carrito_compra" layoutX="20.0" layoutY="75.0" prefHeight="500.0" prefWidth="1180.0" AnchorPane.bottomAnchor="46.39999999999998" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="75.0">
                                             <columns>
                                               <TableColumn fx:id="FXidpro" prefWidth="236.0" text="Producto" />
                                               <TableColumn fx:id="FXNombre_P" prefWidth="236.0" text="Nombre del producto" />
@@ -1035,16 +1035,15 @@
                                                 <Image url="@../Imagenes/logo.jpeg" />
                                              </image>
                                           </ImageView>
-                                          <TableView fx:id="Favorito" layoutX="20.0" layoutY="75.0" onSort="#agregarAlCarrito" prefHeight="500.0" prefWidth="1180.0" AnchorPane.bottomAnchor="44.799999999999955" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="75.0">
+                                          <TableView fx:id="Favorito" layoutX="20.0" layoutY="75.0" prefHeight="500.0" prefWidth="1180.0" AnchorPane.bottomAnchor="44.799999999999955" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="75.0">
                                              <columns>
-                                                <TableColumn fx:id="FXidpro" prefWidth="200.0" text="Producto" />
-                                                <TableColumn fx:id="FXNombre_P" prefWidth="200.0" text="Nombre del producto" />
-                                                <TableColumn fx:id="FXTipoP" prefWidth="200.0" text="Tipo de producto" />
-                                                <TableColumn fx:id="FXPrecio" prefWidth="200.0" text="Precio del producto" />
-                                                <TableColumn fx:id="FXop_Eliminar" prefWidth="200.0" text="Opciones" />
+                                                <TableColumn fx:id="FXidpro1" prefWidth="200.0" text="Producto" />
+                                                <TableColumn fx:id="FXNombre_P1" prefWidth="200.0" text="Nombre del producto" />
+                                                <TableColumn fx:id="FXTipoP1" prefWidth="200.0" text="Tipo de producto" />
+                                                <TableColumn fx:id="FXPrecio1" prefWidth="200.0" text="Precio del producto" />
+                                                <TableColumn fx:id="FXop_Eliminar1" prefWidth="200.0" text="Opciones" />
                                                 <TableColumn fx:id="FXop_Comprar" prefWidth="180.0" text="Opciones" />
-                                             </columns>
-                                          </TableView>
+                                             </columns></TableView>
                                           <Label layoutX="20.0" layoutY="14.0" text="FAVORITOS" textFill="RED" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="14.0">
                                              <font>
                                                 <Font name="Segoe UI" size="24.0" />
@@ -1136,7 +1135,7 @@
                                           <TextField fx:id="FXNombre_C" editable="false" layoutX="792.0" layoutY="99.0" onAction="#Perfil" prefHeight="26.0" prefWidth="304.0" />
                                           <TextField fx:id="FXCorreo_E" editable="false" layoutX="792.0" layoutY="205.0" onAction="#Perfil" prefHeight="26.0" prefWidth="304.0" />
                                           <PasswordField fx:id="FXContrasena" editable="false" layoutX="792.0" layoutY="309.0" onAction="#Perfil" prefHeight="26.0" prefWidth="306.0" />
-                                          <Button layoutX="1070.0" layoutY="539.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="122.0" text="Cerrar Sesion">
+                                          <Button fx:id="FXcerrar" layoutX="1070.0" layoutY="539.0" mnemonicParsing="false" onAction="#cerrar" prefHeight="43.0" prefWidth="122.0" text="Cerrar Sesion">
                                              <font>
                                                 <Font name="Segoe UI Bold" size="14.0" />
                                              </font>

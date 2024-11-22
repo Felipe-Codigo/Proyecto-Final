@@ -3,7 +3,9 @@ package Proyecto;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javax.swing.JOptionPane;
 
 public class Cola {
@@ -244,6 +246,30 @@ public class Cola {
             p = p.sig;
         } while (p != inicio);
     }
+    table.getItems().clear();
     table.setItems(listaProductos);
+    
+    TableColumn<Producto, String> FXidpro = new TableColumn<>("Producto");
+    FXidpro.setCellValueFactory(new PropertyValueFactory<>("Id_P"));
+
+    TableColumn<Producto, String> FXNombre_P = new TableColumn<>("Nombre");
+    FXNombre_P.setCellValueFactory(new PropertyValueFactory<>("Nombre_P"));
+
+    TableColumn<Producto, String> FXTipoP = new TableColumn<>("Tipo");
+    FXTipoP.setCellValueFactory(new PropertyValueFactory<>("Tipo_P"));
+
+    TableColumn<Producto, Integer> FXPrecio = new TableColumn<>("Precio");
+    FXPrecio.setCellValueFactory(new PropertyValueFactory<>("Precio_P"));
+
+    if (table.getColumns().isEmpty()) {
+        table.getColumns().addAll(FXidpro, FXNombre_P, FXTipoP, FXPrecio);
+        JOptionPane.showMessageDialog(null, " SE AGREGO");
+    }else{
+        table.getColumns().addAll(FXidpro, FXNombre_P, FXTipoP, FXPrecio);
+        
+      }
     }
+    
+    
+    
 }

@@ -13,7 +13,7 @@ public class Producto {
         this.Precio_P = Precio_P;
     }
 
-    public String getId_p() {
+    public String getId_P() {
         return Id_P;
     }
     
@@ -29,8 +29,8 @@ public class Producto {
         return Precio_P;
     }
 
-    public void setId_p(String id_p) {
-        this.Id_P = id_p;
+    public void setId_p(String id_P) {
+        this.Id_P = id_P;
     }
     
     public void setNombre_P(String Nombre_P) {

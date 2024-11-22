@@ -3,6 +3,7 @@ package Proyecto;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.EventType;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -35,7 +36,7 @@ public class Pila {
         else{
             Nodo2<Producto> p=tope;
             do{
-                if(p.dato.Id_P.equals(Id_P))
+                if(p.dato.getId_P().equals(Id_P))
                     return p;
                 else
                     p=p.sig;
@@ -70,11 +71,10 @@ public class Pila {
             return null;
         else{
             Nodo2<Producto> p = tope;
-            // Recorremos hasta encontrar el nodo cuya referencia es al "tope"
             while (p.sig != tope) {
                 p = p.sig;
             }
-            return p; // Devolver el último nodo, no el tope
+            return p;
         }
     }
     
@@ -115,70 +115,76 @@ public class Pila {
         }
     }
     
-   public void setRegistrarFilaTable(TableView<Producto> table) {
-       
-    ObservableList<Producto> productosList = FXCollections.observableArrayList();
-
+   public void setRegistrarFilaTable(TableView<Producto> Favorito) {  
+    ObservableList<Producto> Table = FXCollections.observableArrayList();
+    
     if (!getEsPilaVacia()) {
         Nodo2<Producto> nodo = tope;
         do {
-            productosList.add(nodo.dato);  
+            Table.add(nodo.dato);  
             nodo = nodo.sig;  
         } while (nodo != tope);
     }
+  
 
-    table.setItems(productosList); 
+    Favorito.setItems(Table); 
+    Favorito.refresh();
 
-    if (table.getColumns().isEmpty()) {
-        TableColumn<Producto, String> FXidpro = new TableColumn<>("Producto");
-        FXidpro.setCellValueFactory(new PropertyValueFactory<>("Id_P"));
+    if (Favorito.getColumns().isEmpty()) {
+        TableColumn<Producto, String> FXidpro1 = new TableColumn<>("Producto");
+        FXidpro1.setCellValueFactory(new PropertyValueFactory<>("Id_P"));
 
-        TableColumn<Producto, String> FXNombre_P = new TableColumn<>("Nombre");
-        FXNombre_P.setCellValueFactory(new PropertyValueFactory<>("Nombre_P"));
+        TableColumn<Producto, String> FXNombre_P1 = new TableColumn<>("Nombre");
+        FXNombre_P1.setCellValueFactory(new PropertyValueFactory<>("Nombre_P"));
 
-        TableColumn<Producto, String> FXTipoP = new TableColumn<>("Tipo");
-        FXTipoP.setCellValueFactory(new PropertyValueFactory<>("Tipo_P"));
+        TableColumn<Producto, String> FXTipoP1 = new TableColumn<>("Tipo");
+        FXTipoP1.setCellValueFactory(new PropertyValueFactory<>("Tipo_P"));
 
-        TableColumn<Producto, Integer> FXPrecio = new TableColumn<>("Precio");
-        FXPrecio.setCellValueFactory(new PropertyValueFactory<>("Precio_P"));
+        TableColumn<Producto, Integer> FXPrecio1 = new TableColumn<>("Precio");
+        FXPrecio1.setCellValueFactory(new PropertyValueFactory<>("Precio_P"));
+        
 
-        table.getColumns().addAll(FXidpro, FXNombre_P, FXTipoP, FXPrecio);  
+        Favorito.getColumns().addAll(FXidpro1, FXNombre_P1, FXTipoP1, FXPrecio1);  
         
       }
     }
      
-     public void setllenarTable(TableView<Producto> tab) {
-    ObservableList<Producto> productosList = FXCollections.observableArrayList();
+     public void setllenarTable(TableView<Producto> Favorito) {
+    ObservableList<Producto> Table = FXCollections.observableArrayList();
+    
 
     
     if (!getEsPilaVacia()) {
         Nodo2<Producto> nodo = tope;
         do {
-            productosList.add(nodo.dato);  
+            Table.add(nodo.dato);  
             nodo = nodo.sig;  
         } while (nodo != tope);  
     }
     
-    tab.getItems().clear();
-    tab.setItems(productosList);
+    Favorito.getItems().clear();
+    Favorito.setItems(Table);
     
-    TableColumn<Producto, String> FXidpro = new TableColumn<>("Producto");
-    FXidpro.setCellValueFactory(new PropertyValueFactory<>("Id_P"));
+    TableColumn<Producto, String> FXidpro1 = new TableColumn<>("Producto");
+    FXidpro1.setCellValueFactory(new PropertyValueFactory<>("Id_P"));
 
-    TableColumn<Producto, String> FXNombre_P = new TableColumn<>("Nombre");
-    FXNombre_P.setCellValueFactory(new PropertyValueFactory<>("Nombre_P"));
+    TableColumn<Producto, String> FXNombre_P1 = new TableColumn<>("Nombre");
+    FXNombre_P1.setCellValueFactory(new PropertyValueFactory<>("Nombre_P"));
 
-    TableColumn<Producto, String> FXTipoP = new TableColumn<>("Tipo");
-    FXTipoP.setCellValueFactory(new PropertyValueFactory<>("Tipo_P"));
+    TableColumn<Producto, String> FXTipoP1 = new TableColumn<>("Tipo");
+    FXTipoP1.setCellValueFactory(new PropertyValueFactory<>("Tipo_P"));
 
-    TableColumn<Producto, Integer> FXPrecio = new TableColumn<>("Precio");
-    FXPrecio.setCellValueFactory(new PropertyValueFactory<>("Precio_P"));
+    TableColumn<Producto, Integer> FXPrecio1 = new TableColumn<>("Precio");
+    FXPrecio1.setCellValueFactory(new PropertyValueFactory<>("Precio_P"));
+    
+    
 
-    if (tab.getColumns().isEmpty()) {
-        tab.getColumns().addAll(FXidpro, FXNombre_P, FXTipoP, FXPrecio);
+    if (Favorito.getColumns().isEmpty()) {
+        Favorito.getColumns().addAll(FXidpro1, FXNombre_P1, FXTipoP1, FXPrecio1);
         JOptionPane.showMessageDialog(null, " SE AGREGO");
     }else{
-        JOptionPane.showMessageDialog(null, "NO SE AGREGO");
+        Favorito.getColumns().addAll(FXidpro1, FXNombre_P1, FXTipoP1, FXPrecio1);
+        
       }
     }
     
